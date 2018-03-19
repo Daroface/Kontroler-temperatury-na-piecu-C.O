@@ -1,6 +1,6 @@
 [Eagle]
 Version="08 07 00"
-Platform="Windows"
+Platform="Linux"
 Globals="Globals"
 Desktop="Desktop"
 

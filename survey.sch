@@ -17163,15 +17163,15 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="U1" library="esp8266modules" deviceset="ESP12E" device="SMD"/>
-<part name="IC1" library="DS1820" deviceset="DS1820" device=""/>
+<part name="ESP-12E" library="esp8266modules" deviceset="ESP12E" device="SMD"/>
+<part name="TSENSOR" library="DS1820" deviceset="DS1820" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
-<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
+<part name="USB" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="J1" library="connector" deviceset="PJ-102AH" device=""/>
+<part name="SOCKET" library="connector" deviceset="PJ-102AH" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2.5-6" package3d_urn="urn:adsk.eagle:package:23349/1"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2"/>
@@ -17184,21 +17184,23 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="H2" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.0" package3d_urn="urn:adsk.eagle:package:14277/1"/>
 <part name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.0" package3d_urn="urn:adsk.eagle:package:14277/1"/>
 <part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.0" package3d_urn="urn:adsk.eagle:package:14277/1"/>
+<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U1" gate="G$1" x="55.88" y="78.74"/>
-<instance part="IC1" gate="G$1" x="116.84" y="83.82"/>
+<instance part="ESP-12E" gate="G$1" x="55.88" y="78.74"/>
+<instance part="TSENSOR" gate="G$1" x="116.84" y="83.82"/>
 <instance part="GND1" gate="1" x="116.84" y="71.12"/>
 <instance part="SUPPLY1" gate="G$1" x="96.52" y="88.9"/>
-<instance part="JP1" gate="A" x="88.9" y="96.52"/>
+<instance part="USB" gate="A" x="88.9" y="96.52"/>
 <instance part="SUPPLY2" gate="G$1" x="76.2" y="106.68"/>
 <instance part="GND2" gate="1" x="78.74" y="88.9"/>
 <instance part="GND3" gate="1" x="78.74" y="66.04"/>
-<instance part="J1" gate="G$1" x="-2.54" y="109.22"/>
+<instance part="SOCKET" gate="G$1" x="-2.54" y="109.22"/>
 <instance part="GND4" gate="1" x="7.62" y="101.6"/>
 <instance part="C1" gate="G$1" x="15.24" y="109.22"/>
 <instance part="C2" gate="G$1" x="22.86" y="109.22"/>
@@ -17211,15 +17213,17 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="H2" gate="G$1" x="99.06" y="121.92"/>
 <instance part="H3" gate="G$1" x="111.76" y="114.3"/>
 <instance part="H4" gate="G$1" x="99.06" y="114.3"/>
+<instance part="GND6" gate="1" x="83.82" y="76.2"/>
+<instance part="GND7" gate="1" x="88.9" y="63.5"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="N$1" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DQ"/>
+<pinref part="TSENSOR" gate="G$1" pin="DQ"/>
 <wire x1="127" y1="86.36" x2="127" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="GPIO2"/>
+<pinref part="ESP-12E" gate="G$1" pin="GPIO2"/>
 <wire x1="71.12" y1="73.66" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="73.66" x2="96.52" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="66.04" x2="127" y2="66.04" width="0.1524" layer="91"/>
@@ -17228,17 +17232,17 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <net name="VCC" class="0">
 <segment>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
-<pinref part="IC1" gate="G$1" pin="VDD"/>
+<pinref part="TSENSOR" gate="G$1" pin="VDD"/>
 <wire x1="96.52" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="USB" gate="A" pin="1"/>
 <wire x1="86.36" y1="101.6" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="101.6" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="VCC"/>
+<pinref part="SOCKET" gate="G$1" pin="VCC"/>
 <wire x1="5.08" y1="111.76" x2="15.24" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="+"/>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -17251,7 +17255,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
-<pinref part="U1" gate="G$1" pin="VCC"/>
+<pinref part="ESP-12E" gate="G$1" pin="VCC"/>
 <wire x1="22.86" y1="68.58" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -17263,22 +17267,22 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="IC1" gate="G$1" pin="GND"/>
+<pinref part="TSENSOR" gate="G$1" pin="GND"/>
 <wire x1="116.84" y1="73.66" x2="116.84" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="4"/>
+<pinref part="USB" gate="A" pin="4"/>
 <wire x1="86.36" y1="93.98" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="93.98" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="ESP-12E" gate="G$1" pin="GND"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="71.12" y1="68.58" x2="78.74" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="GND"/>
+<pinref part="SOCKET" gate="G$1" pin="GND"/>
 <wire x1="5.08" y1="106.68" x2="7.62" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="7.62" y1="106.68" x2="7.62" y2="104.14" width="0.1524" layer="91"/>
@@ -17293,22 +17297,36 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="20.32" y1="101.6" x2="20.32" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="ESP-12E" gate="G$1" pin="GPIO0"/>
+<wire x1="71.12" y1="76.2" x2="78.74" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="76.2" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="81.28" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="83.82" y1="81.28" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="88.9" y1="66.04" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="ESP-12E" gate="G$1" pin="GPIO15"/>
+<wire x1="88.9" y1="71.12" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="TX"/>
+<pinref part="ESP-12E" gate="G$1" pin="TX"/>
 <wire x1="71.12" y1="86.36" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="86.36" x2="73.66" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="USB" gate="A" pin="2"/>
 <wire x1="73.66" y1="99.06" x2="86.36" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="RX"/>
+<pinref part="ESP-12E" gate="G$1" pin="RX"/>
 <wire x1="71.12" y1="83.82" x2="76.2" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="83.82" x2="76.2" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="USB" gate="A" pin="3"/>
 <wire x1="76.2" y1="96.52" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -17317,9 +17335,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="81.28" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="81.28" x2="33.02" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="RESET"/>
+<pinref part="ESP-12E" gate="G$1" pin="RESET"/>
 <wire x1="33.02" y1="86.36" x2="38.1" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="CH_PD"/>
+<pinref part="ESP-12E" gate="G$1" pin="CH_PD"/>
 <wire x1="33.02" y1="81.28" x2="38.1" y2="81.28" width="0.1524" layer="91"/>
 <junction x="33.02" y="81.28"/>
 </segment>
