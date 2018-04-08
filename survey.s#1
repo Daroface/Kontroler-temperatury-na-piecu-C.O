@@ -17519,9 +17519,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="ESP-12E" gate="G$1" pin="GPIO4"/>
 <wire x1="71.12" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="TSENSOR" gate="G$1" pin="DQ"/>
-<wire x1="127" y1="86.36" x2="127" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="66.04" x2="127" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="66.04" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="127" y1="86.36" x2="127" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="68.58" x2="127" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="68.58" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="83.82" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="83.82" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
 </segment>
