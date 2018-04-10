@@ -351,6 +351,12 @@ UsedLibrary="libraries/esp8266modules.lbr"
 UsedLibrary="libraries/switch-tact.lbr"
 UsedLibrary="libraries/tango.lbr"
 UsedLibrary="libraries/lf33.lbr"
+UsedLibrary="libraries/diy-modules.lbr"
+
+[Win_1]
+Type="Control Panel"
+Number=0
 
 [Desktop]
 Screen="1600 900"
+Window="Win_1"
