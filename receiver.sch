@@ -17396,8 +17396,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <part name="S4" library="switch-tact" deviceset="DTS-3" device=""/>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="100"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k"/>
-<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k"/>
+<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="4,7k"/>
+<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="4,7k"/>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+5V"/>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+5V"/>
 </parts>
@@ -17419,23 +17419,23 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <instance part="R3" gate="G$1" x="-5.08" y="60.96"/>
 <instance part="R4" gate="G$1" x="15.24" y="53.34"/>
 <instance part="R5" gate="G$1" x="91.44" y="35.56"/>
-<instance part="IC1" gate="A" x="-48.26" y="93.98"/>
-<instance part="C1" gate="G$1" x="-63.5" y="93.98"/>
-<instance part="C2" gate="G$1" x="-38.1" y="93.98"/>
-<instance part="GND5" gate="1" x="-50.8" y="83.82"/>
-<instance part="JP1" gate="G$1" x="-53.34" y="68.58"/>
-<instance part="GND6" gate="1" x="-63.5" y="63.5"/>
-<instance part="SUPPLY9" gate="G$1" x="-68.58" y="99.06"/>
-<instance part="IC2" gate="A" x="-45.72" y="45.72"/>
-<instance part="C3" gate="G$1" x="-60.96" y="43.18"/>
-<instance part="C4" gate="G$1" x="-30.48" y="43.18"/>
-<instance part="GND7" gate="1" x="-45.72" y="33.02"/>
-<instance part="SUPPLY10" gate="G$1" x="-63.5" y="50.8"/>
+<instance part="IC1" gate="A" x="-12.7" y="106.68"/>
+<instance part="C1" gate="G$1" x="-27.94" y="106.68"/>
+<instance part="C2" gate="G$1" x="-2.54" y="106.68"/>
+<instance part="GND5" gate="1" x="-15.24" y="96.52"/>
+<instance part="JP1" gate="G$1" x="-17.78" y="81.28"/>
+<instance part="GND6" gate="1" x="-27.94" y="76.2"/>
+<instance part="SUPPLY9" gate="G$1" x="-33.02" y="111.76"/>
+<instance part="IC2" gate="A" x="-30.48" y="45.72"/>
+<instance part="C3" gate="G$1" x="-45.72" y="43.18"/>
+<instance part="C4" gate="G$1" x="-15.24" y="43.18"/>
+<instance part="GND7" gate="1" x="-30.48" y="33.02"/>
+<instance part="SUPPLY10" gate="G$1" x="-48.26" y="50.8"/>
 <instance part="R6" gate="G$1" x="30.48" y="53.34"/>
-<instance part="C5" gate="G$1" x="-43.18" y="71.12"/>
-<instance part="C6" gate="G$1" x="-35.56" y="71.12"/>
-<instance part="SUPPLY3" gate="G$1" x="-27.94" y="78.74"/>
-<instance part="GND8" gate="1" x="-38.1" y="58.42"/>
+<instance part="C5" gate="G$1" x="-7.62" y="83.82"/>
+<instance part="C6" gate="G$1" x="0" y="83.82"/>
+<instance part="SUPPLY3" gate="G$1" x="7.62" y="91.44"/>
+<instance part="GND8" gate="1" x="-2.54" y="71.12"/>
 <instance part="R7" gate="G$1" x="101.6" y="58.42"/>
 <instance part="S3" gate="G$1" x="109.22" y="50.8" rot="R90"/>
 <instance part="GND2" gate="1" x="119.38" y="45.72"/>
@@ -17447,10 +17447,10 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <instance part="SUPPLY1" gate="G$1" x="76.2" y="106.68"/>
 <instance part="SUPPLY2" gate="G$1" x="114.3" y="60.96"/>
 <instance part="SUPPLY5" gate="G$1" x="96.52" y="40.64"/>
-<instance part="SUPPLY6" gate="G$1" x="-22.86" y="50.8"/>
+<instance part="SUPPLY6" gate="G$1" x="-7.62" y="50.8"/>
 <instance part="SUPPLY8" gate="G$1" x="25.4" y="101.6"/>
 <instance part="SUPPLY11" gate="G$1" x="15.24" y="71.12"/>
-<instance part="SUPPLY12" gate="G$1" x="-27.94" y="99.06"/>
+<instance part="SUPPLY12" gate="G$1" x="7.62" y="111.76"/>
 <instance part="SUPPLY7" gate="G$1" x="142.24" y="86.36"/>
 <instance part="SUPPLY4" gate="G$1" x="-15.24" y="63.5"/>
 <instance part="SUPPLY13" gate="G$1" x="7.62" y="55.88"/>
@@ -17474,33 +17474,33 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <net name="VCC" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="-45.72" y1="73.66" x2="-43.18" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="86.36" x2="-7.62" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="+"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="-43.18" y1="73.66" x2="-35.56" y2="73.66" width="0.1524" layer="91"/>
-<junction x="-43.18" y="73.66"/>
-<wire x1="-35.56" y1="73.66" x2="-27.94" y2="73.66" width="0.1524" layer="91"/>
-<junction x="-35.56" y="73.66"/>
-<wire x1="-27.94" y1="73.66" x2="-27.94" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="86.36" x2="0" y2="86.36" width="0.1524" layer="91"/>
+<junction x="-7.62" y="86.36"/>
+<wire x1="0" y1="86.36" x2="7.62" y2="86.36" width="0.1524" layer="91"/>
+<junction x="0" y="86.36"/>
+<wire x1="7.62" y1="86.36" x2="7.62" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
-<wire x1="-55.88" y1="71.12" x2="-45.72" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="71.12" x2="-45.72" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="83.82" x2="-10.16" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="83.82" x2="-10.16" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="A" pin="IN"/>
-<wire x1="-63.5" y1="96.52" x2="-55.88" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="96.52" x2="-68.58" y2="96.52" width="0.1524" layer="91"/>
-<junction x="-63.5" y="96.52"/>
+<wire x1="-27.94" y1="109.22" x2="-20.32" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="109.22" x2="-33.02" y2="109.22" width="0.1524" layer="91"/>
+<junction x="-27.94" y="109.22"/>
 <pinref part="SUPPLY9" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="A" pin="IN"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="-53.34" y1="45.72" x2="-60.96" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-60.96" y1="45.72" x2="-63.5" y2="45.72" width="0.1524" layer="91"/>
-<junction x="-60.96" y="45.72"/>
-<wire x1="-63.5" y1="45.72" x2="-63.5" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="45.72" x2="-45.72" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="45.72" x2="-48.26" y2="45.72" width="0.1524" layer="91"/>
+<junction x="-45.72" y="45.72"/>
+<wire x1="-48.26" y1="45.72" x2="-48.26" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="SUPPLY10" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
@@ -17525,10 +17525,10 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="IC2" gate="A" pin="OUT"/>
-<wire x1="-30.48" y1="45.72" x2="-38.1" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="45.72" x2="-22.86" y2="45.72" width="0.1524" layer="91"/>
-<junction x="-30.48" y="45.72"/>
-<wire x1="-22.86" y1="45.72" x2="-22.86" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="45.72" x2="-22.86" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="45.72" x2="-7.62" y2="45.72" width="0.1524" layer="91"/>
+<junction x="-15.24" y="45.72"/>
+<wire x1="-7.62" y1="45.72" x2="-7.62" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
@@ -17538,10 +17538,10 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="OUT"/>
-<wire x1="-40.64" y1="96.52" x2="-38.1" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="109.22" x2="-2.54" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="-38.1" y1="96.52" x2="-27.94" y2="96.52" width="0.1524" layer="91"/>
-<junction x="-38.1" y="96.52"/>
+<wire x1="-2.54" y1="109.22" x2="7.62" y2="109.22" width="0.1524" layer="91"/>
+<junction x="-2.54" y="109.22"/>
 <pinref part="SUPPLY12" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
@@ -17616,45 +17616,45 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="GND"/>
-<wire x1="-48.26" y1="88.9" x2="-48.26" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="86.36" x2="-50.8" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="86.36" x2="-63.5" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="86.36" x2="-38.1" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="101.6" x2="-12.7" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="99.06" x2="-15.24" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="99.06" x2="-27.94" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="99.06" x2="-2.54" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="-63.5" y1="88.9" x2="-63.5" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="101.6" x2="-27.94" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="-38.1" y1="88.9" x2="-38.1" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="101.6" x2="-2.54" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<junction x="-50.8" y="86.36"/>
+<junction x="-15.24" y="99.06"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="-55.88" y1="68.58" x2="-63.5" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="68.58" x2="-63.5" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="81.28" x2="-27.94" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="81.28" x2="-27.94" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="-60.96" y1="38.1" x2="-60.96" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-60.96" y1="35.56" x2="-45.72" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="A" pin="GND"/>
-<wire x1="-45.72" y1="35.56" x2="-45.72" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="-45.72" y1="38.1" x2="-45.72" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="35.56" x2="-30.48" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="A" pin="GND"/>
 <wire x1="-30.48" y1="35.56" x2="-30.48" y2="38.1" width="0.1524" layer="91"/>
-<junction x="-45.72" y="35.56"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="-30.48" y1="35.56" x2="-15.24" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="35.56" x2="-15.24" y2="38.1" width="0.1524" layer="91"/>
+<junction x="-30.48" y="35.56"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="-"/>
-<wire x1="-43.18" y1="66.04" x2="-43.18" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="78.74" x2="-7.62" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="-38.1" y1="63.5" x2="-35.56" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="63.5" x2="-35.56" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="63.5" x2="-38.1" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="63.5" x2="-38.1" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="76.2" x2="0" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="0" y1="76.2" x2="0" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="76.2" x2="-2.54" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="76.2" x2="-2.54" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 <segment>
