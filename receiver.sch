@@ -17246,27 +17246,27 @@ http://www.instructables.com/id/DIY-Lithium-ion-Battery-Charger/step4/TP4056-bas
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="B3" library="switch-tact" deviceset="DTS-3" device=""/>
 <part name="B4" library="switch-tact" deviceset="DTS-3" device=""/>
-<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k"/>
-<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k"/>
-<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k"/>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k"/>
+<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k"/>
+<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2" value="0,33u"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2" value="0,1u"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="LI-POL" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+3V7"/>
-<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="100"/>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="100"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2.5-6" package3d_urn="urn:adsk.eagle:package:23349/1" value="100u"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2" value="100n"/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+3V7"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k"/>
+<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k"/>
 <part name="S1" library="smd-special" library_urn="urn:adsk.eagle:library:362" deviceset="SWS001" device="" package3d_urn="urn:adsk.eagle:package:26467/1"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="100"/>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="100"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k"/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+3V3"/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+3V3"/>
@@ -17281,20 +17281,21 @@ http://www.instructables.com/id/DIY-Lithium-ion-Battery-Charger/step4/TP4056-bas
 <part name="B1" library="switch-tact" deviceset="DTS-3" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="4,7k"/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="4,7k"/>
+<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="4,7k"/>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+3V3"/>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+3V3"/>
 <part name="SU/SD3V3" library="Pololu Voltage Regulators" deviceset="5V_VOLTAGE_REGULATOR" device=""/>
 <part name="B2" library="switch-tact" deviceset="DTS-3" device=""/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k"/>
-<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="100"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k"/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="100"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+3V3"/>
 <part name="U$1" library="diy-modules" deviceset="BATTERY-CHARGER-LI-PROT" device=""/>
 <part name="BUZZER" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="/90" package3d_urn="urn:adsk.eagle:package:22459/2"/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+3V3"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="1k"/>
 </parts>
 <sheets>
 <sheet>
@@ -17310,27 +17311,27 @@ http://www.instructables.com/id/DIY-Lithium-ion-Battery-Charger/step4/TP4056-bas
 <instance part="GND4" gate="1" x="78.74" y="86.36"/>
 <instance part="B3" gate="G$1" x="10.16" y="48.26"/>
 <instance part="B4" gate="G$1" x="27.94" y="45.72"/>
-<instance part="R5" gate="G$1" x="0" y="53.34"/>
-<instance part="R7" gate="G$1" x="20.32" y="50.8"/>
-<instance part="R10" gate="G$1" x="91.44" y="35.56"/>
+<instance part="R6" gate="G$1" x="0" y="53.34"/>
+<instance part="R8" gate="G$1" x="20.32" y="50.8"/>
+<instance part="R11" gate="G$1" x="91.44" y="35.56"/>
 <instance part="C3" gate="G$1" x="-35.56" y="139.7"/>
 <instance part="C4" gate="G$1" x="5.08" y="139.7"/>
 <instance part="GND5" gate="1" x="-15.24" y="127"/>
 <instance part="LI-POL" gate="G$1" x="0" y="109.22"/>
 <instance part="GND6" gate="1" x="-10.16" y="96.52"/>
 <instance part="SUPPLY9" gate="G$1" x="-38.1" y="144.78"/>
-<instance part="R8" gate="G$1" x="33.02" y="58.42"/>
+<instance part="R9" gate="G$1" x="33.02" y="58.42"/>
 <instance part="C1" gate="G$1" x="5.08" y="114.3"/>
 <instance part="C2" gate="G$1" x="12.7" y="114.3"/>
 <instance part="SUPPLY3" gate="G$1" x="15.24" y="121.92"/>
 <instance part="GND8" gate="1" x="10.16" y="101.6"/>
-<instance part="R11" gate="G$1" x="101.6" y="58.42"/>
+<instance part="R12" gate="G$1" x="101.6" y="58.42"/>
 <instance part="S1" gate="G$1" x="109.22" y="50.8" rot="R90"/>
 <instance part="GND2" gate="1" x="119.38" y="45.72"/>
 <instance part="GND10" gate="1" x="27.94" y="33.02"/>
-<instance part="R6" gate="G$1" x="25.4" y="60.96"/>
+<instance part="R7" gate="G$1" x="25.4" y="60.96"/>
 <instance part="GND11" gate="1" x="10.16" y="35.56"/>
-<instance part="R9" gate="G$1" x="81.28" y="40.64" rot="R90"/>
+<instance part="R10" gate="G$1" x="81.28" y="40.64" rot="R90"/>
 <instance part="GND12" gate="1" x="81.28" y="30.48"/>
 <instance part="SUPPLY1" gate="G$1" x="76.2" y="106.68"/>
 <instance part="SUPPLY2" gate="G$1" x="114.3" y="60.96"/>
@@ -17345,20 +17346,21 @@ http://www.instructables.com/id/DIY-Lithium-ion-Battery-Charger/step4/TP4056-bas
 <instance part="B1" gate="G$1" x="20.32" y="78.74" rot="R270"/>
 <instance part="R1" gate="G$1" x="25.4" y="91.44" rot="R90"/>
 <instance part="GND9" gate="1" x="10.16" y="73.66"/>
-<instance part="R12" gate="G$1" x="129.54" y="60.96" rot="R90"/>
-<instance part="R13" gate="G$1" x="134.62" y="81.28" rot="R90"/>
+<instance part="R13" gate="G$1" x="129.54" y="60.96" rot="R90"/>
+<instance part="R14" gate="G$1" x="134.62" y="81.28" rot="R90"/>
 <instance part="SUPPLY17" gate="G$1" x="134.62" y="91.44"/>
 <instance part="SUPPLY18" gate="G$1" x="137.16" y="55.88"/>
 <instance part="SU/SD3V3" gate="J_REG_5V" x="-15.24" y="142.24"/>
 <instance part="B2" gate="G$1" x="-10.16" y="50.8"/>
-<instance part="R3" gate="G$1" x="-20.32" y="55.88"/>
-<instance part="R4" gate="G$1" x="15.24" y="63.5"/>
+<instance part="R4" gate="G$1" x="-20.32" y="55.88"/>
+<instance part="R5" gate="G$1" x="15.24" y="63.5"/>
 <instance part="GND7" gate="1" x="-10.16" y="38.1"/>
 <instance part="SUPPLY6" gate="G$1" x="-27.94" y="58.42"/>
 <instance part="U$1" gate="G$1" x="-27.94" y="109.22"/>
 <instance part="BUZZER" gate="A" x="-12.7" y="71.12"/>
 <instance part="SUPPLY10" gate="G$1" x="-20.32" y="78.74"/>
 <instance part="GND13" gate="1" x="-20.32" y="63.5"/>
+<instance part="R3" gate="G$1" x="0" y="66.04"/>
 </instances>
 <busses>
 </busses>
@@ -17382,12 +17384,12 @@ http://www.instructables.com/id/DIY-Lithium-ion-Battery-Charger/step4/TP4056-bas
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="58.42" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="35.56" x2="96.52" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
 </segment>
@@ -17412,11 +17414,11 @@ http://www.instructables.com/id/DIY-Lithium-ion-Battery-Charger/step4/TP4056-bas
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="-7.62" y1="53.34" x2="-5.08" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="SUPPLY13" gate="G$1" pin="VCC"/>
 <wire x1="15.24" y1="50.8" x2="12.7" y2="50.8" width="0.1524" layer="91"/>
 </segment>
@@ -17433,19 +17435,19 @@ http://www.instructables.com/id/DIY-Lithium-ion-Battery-Charger/step4/TP4056-bas
 <wire x1="25.4" y1="96.52" x2="25.4" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="R14" gate="G$1" pin="2"/>
 <pinref part="SUPPLY17" gate="G$1" pin="VCC"/>
 <wire x1="134.62" y1="86.36" x2="134.62" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="55.88" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="53.34" x2="137.16" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="SUPPLY18" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="-27.94" y1="55.88" x2="-25.4" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -17517,7 +17519,7 @@ http://www.instructables.com/id/DIY-Lithium-ion-Battery-Charger/step4/TP4056-bas
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="81.28" y1="33.02" x2="81.28" y2="35.56" width="0.1524" layer="91"/>
 </segment>
@@ -17580,7 +17582,7 @@ http://www.instructables.com/id/DIY-Lithium-ion-Battery-Charger/step4/TP4056-bas
 <wire x1="129.54" y1="68.58" x2="139.7" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="68.58" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
 <label x="93.98" y="68.58" size="1.778" layer="95"/>
-<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="66.04" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
 <junction x="129.54" y="68.58"/>
 <pinref part="ESP-12E" gate="G$1" pin="GPIO5"/>
@@ -17593,7 +17595,7 @@ http://www.instructables.com/id/DIY-Lithium-ion-Battery-Charger/step4/TP4056-bas
 <wire x1="73.66" y1="66.04" x2="78.74" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="66.04" x2="78.74" y2="73.66" width="0.1524" layer="91"/>
 <label x="96.52" y="73.66" size="1.778" layer="95"/>
-<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="76.2" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="73.66" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="LCD" gate="A" pin="3"/>
@@ -17622,7 +17624,7 @@ http://www.instructables.com/id/DIY-Lithium-ion-Battery-Charger/step4/TP4056-bas
 <segment>
 <pinref part="ESP-12E" gate="G$1" pin="GPIO2"/>
 <wire x1="73.66" y1="60.96" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="60.96" x2="86.36" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -17632,7 +17634,7 @@ http://www.instructables.com/id/DIY-Lithium-ion-Battery-Charger/step4/TP4056-bas
 <wire x1="73.66" y1="63.5" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="63.5" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="58.42" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="R12" gate="G$1" pin="1"/>
 <junction x="91.44" y="58.42"/>
 <wire x1="91.44" y1="58.42" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="50.8" x2="101.6" y2="50.8" width="0.1524" layer="91"/>
@@ -17643,40 +17645,40 @@ http://www.instructables.com/id/DIY-Lithium-ion-Battery-Charger/step4/TP4056-bas
 <segment>
 <pinref part="ESP-12E" gate="G$1" pin="GPIO15"/>
 <wire x1="73.66" y1="58.42" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="58.42" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="ESP-12E" gate="G$1" pin="GPIO12"/>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="60.96" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="B4" gate="G$1" pin="2"/>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="50.8" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="27.94" y1="50.8" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
 <junction x="27.94" y="50.8"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="ESP-12E" gate="G$1" pin="GPIO13"/>
 <wire x1="38.1" y1="58.42" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="-15.24" y1="55.88" x2="-10.16" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="B2" gate="G$1" pin="2"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="10.16" y1="63.5" x2="-10.16" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="63.5" x2="-10.16" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-10.16" y="55.88"/>
@@ -17684,7 +17686,7 @@ http://www.instructables.com/id/DIY-Lithium-ion-Battery-Charger/step4/TP4056-bas
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="ESP-12E" gate="G$1" pin="GPIO14"/>
 <wire x1="20.32" y1="63.5" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
 </segment>
@@ -17692,9 +17694,9 @@ http://www.instructables.com/id/DIY-Lithium-ion-Battery-Charger/step4/TP4056-bas
 <net name="N$14" class="0">
 <segment>
 <pinref part="B3" gate="G$1" pin="2"/>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="5.08" y1="53.34" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="60.96" x2="10.16" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="53.34" x2="10.16" y2="60.96" width="0.1524" layer="91"/>
 <junction x="10.16" y="53.34"/>
@@ -17718,13 +17720,20 @@ http://www.instructables.com/id/DIY-Lithium-ion-Battery-Charger/step4/TP4056-bas
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="ESP-12E" gate="G$1" pin="GPIO16"/>
-<wire x1="40.64" y1="66.04" x2="-7.62" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="66.04" x2="-7.62" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="83.82" x2="-25.4" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="83.82" x2="-25.4" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="BUZZER" gate="A" pin="2"/>
 <wire x1="-25.4" y1="71.12" x2="-15.24" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="-5.08" y1="66.04" x2="-7.62" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="ESP-12E" gate="G$1" pin="GPIO16"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="66.04" x2="5.08" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
