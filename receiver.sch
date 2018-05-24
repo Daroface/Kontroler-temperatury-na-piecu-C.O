@@ -16932,28 +16932,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 &lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;Doublecheck before using!&lt;/b&gt;&lt;/p&gt;</description>
 <packages>
-<package name="DTS-3">
-<wire x1="-3" y1="1.75" x2="3" y2="1.75" width="0.2032" layer="51"/>
-<wire x1="3" y1="1.75" x2="3" y2="-1.75" width="0.2032" layer="51"/>
-<wire x1="3" y1="-1.75" x2="-3" y2="-1.75" width="0.2032" layer="51"/>
-<wire x1="-3" y1="-1.75" x2="-3" y2="1.75" width="0.2032" layer="51"/>
-<wire x1="-1.5" y1="0.75" x2="1.5" y2="0.75" width="0.2032" layer="51"/>
-<wire x1="1.5" y1="0.75" x2="1.5" y2="-0.75" width="0.2032" layer="51"/>
-<wire x1="1.5" y1="-0.75" x2="-1.5" y2="-0.75" width="0.2032" layer="51"/>
-<wire x1="-1.5" y1="-0.75" x2="-1.5" y2="0.75" width="0.2032" layer="51"/>
-<wire x1="-3" y1="1.75" x2="-3" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="-3" y1="1.75" x2="3" y2="1.75" width="0.2032" layer="21"/>
-<wire x1="3" y1="1.75" x2="3" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="3" y1="-1.5" x2="3" y2="-1.75" width="0.2032" layer="21"/>
-<wire x1="3" y1="-1.75" x2="-3" y2="-1.75" width="0.2032" layer="21"/>
-<wire x1="-3" y1="-1.75" x2="-3" y2="-1.5" width="0.2032" layer="21"/>
-<wire x1="-1" y1="0.75" x2="1" y2="0.75" width="0.2032" layer="21"/>
-<wire x1="-1" y1="-0.75" x2="1" y2="-0.75" width="0.2032" layer="21"/>
-<pad name="1" x="-3.25" y="0" drill="1.3" shape="long"/>
-<pad name="2" x="3.25" y="0" drill="1.3" shape="long"/>
-<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 <package name="DTS-6">
 <wire x1="-3.1" y1="3.1" x2="3.1" y2="3.1" width="0.2032" layer="51"/>
 <wire x1="3.1" y1="3.1" x2="3.1" y2="-3.1" width="0.2032" layer="51"/>
@@ -16974,23 +16952,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </package>
 </packages>
 <symbols>
-<symbol name="TS">
-<wire x1="0" y1="-3.175" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="3.175" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-0.635" y2="0" width="0.254" layer="94"/>
-<wire x1="-4.445" y1="1.905" x2="-3.175" y2="1.905" width="0.254" layer="94"/>
-<wire x1="-4.445" y1="-1.905" x2="-3.175" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="-4.445" y1="1.905" x2="-4.445" y2="0" width="0.254" layer="94"/>
-<wire x1="-4.445" y1="0" x2="-4.445" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.635" y1="0" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-4.445" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
-<text x="-6.35" y="-1.905" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="-3.81" y="3.175" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="1" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="2" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-</symbol>
 <symbol name="TS2">
 <wire x1="0" y1="1.905" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-4.445" y1="1.905" x2="-3.175" y2="1.905" width="0.254" layer="94"/>
@@ -17014,22 +16975,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DTS-3" prefix="S">
-<gates>
-<gate name="G$1" symbol="TS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DTS-3">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="DTS-6" prefix="S">
 <gates>
 <gate name="G$1" symbol="TS2" x="0" y="0"/>
@@ -17565,7 +17510,7 @@ W = angled&lt;p&gt;
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+3V7"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="2k2"/>
-<part name="S1" library="smd-special" library_urn="urn:adsk.eagle:library:362" deviceset="SWS001" device="" package3d_urn="urn:adsk.eagle:package:26467/1"/>
+<part name="S5" library="smd-special" library_urn="urn:adsk.eagle:library:362" deviceset="SWS001" device="" package3d_urn="urn:adsk.eagle:package:26467/1"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="100"/>
@@ -17582,7 +17527,6 @@ W = angled&lt;p&gt;
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+3V3"/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+3V3"/>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+3V3"/>
-<part name="B1" library="switch-tact" deviceset="DTS-3" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="4,7k"/>
@@ -17604,9 +17548,10 @@ W = angled&lt;p&gt;
 <part name="S2" library="switch-tact" deviceset="DTS-6" device=""/>
 <part name="S3" library="switch-tact" deviceset="DTS-6" device=""/>
 <part name="S4" library="switch-tact" deviceset="DTS-6" device=""/>
-<part name="SV1" library="con-lsta" library_urn="urn:adsk.eagle:library:161" deviceset="FE08-1" device="" package3d_urn="urn:adsk.eagle:package:8194/1"/>
+<part name="OLED" library="con-lsta" library_urn="urn:adsk.eagle:library:161" deviceset="FE08-1" device="" package3d_urn="urn:adsk.eagle:package:8194/1"/>
 <part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="4,7k"/>
 <part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+3V3"/>
+<part name="S1" library="switch-tact" deviceset="DTS-6" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17634,7 +17579,7 @@ W = angled&lt;p&gt;
 <instance part="SUPPLY3" gate="G$1" x="15.24" y="121.92"/>
 <instance part="GND8" gate="1" x="10.16" y="101.6"/>
 <instance part="R13" gate="G$1" x="101.6" y="58.42"/>
-<instance part="S1" gate="G$1" x="109.22" y="50.8" rot="R90"/>
+<instance part="S5" gate="G$1" x="109.22" y="50.8" rot="R90"/>
 <instance part="GND2" gate="1" x="119.38" y="45.72"/>
 <instance part="GND10" gate="1" x="27.94" y="27.94"/>
 <instance part="R8" gate="G$1" x="25.4" y="60.96"/>
@@ -17651,9 +17596,8 @@ W = angled&lt;p&gt;
 <instance part="SUPPLY4" gate="G$1" x="-7.62" y="55.88"/>
 <instance part="SUPPLY13" gate="G$1" x="12.7" y="53.34"/>
 <instance part="SUPPLY14" gate="G$1" x="40.64" y="50.8"/>
-<instance part="B1" gate="G$1" x="20.32" y="78.74" rot="R270"/>
 <instance part="R1" gate="G$1" x="25.4" y="91.44" rot="R90"/>
-<instance part="GND9" gate="1" x="10.16" y="73.66"/>
+<instance part="GND9" gate="1" x="0" y="73.66"/>
 <instance part="R15" gate="G$1" x="129.54" y="60.96" rot="R90"/>
 <instance part="R16" gate="G$1" x="134.62" y="81.28" rot="R90"/>
 <instance part="SUPPLY17" gate="G$1" x="134.62" y="91.44"/>
@@ -17673,9 +17617,10 @@ W = angled&lt;p&gt;
 <instance part="S2" gate="G$1" x="-12.7" y="45.72"/>
 <instance part="S3" gate="G$1" x="7.62" y="43.18"/>
 <instance part="S4" gate="G$1" x="25.4" y="40.64"/>
-<instance part="SV1" gate="G$1" x="170.18" y="73.66" rot="R180"/>
+<instance part="OLED" gate="G$1" x="170.18" y="73.66" rot="R180"/>
 <instance part="R17" gate="G$1" x="157.48" y="55.88" rot="R90"/>
 <instance part="SUPPLY15" gate="G$1" x="165.1" y="50.8"/>
+<instance part="S1" gate="G$1" x="12.7" y="81.28" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -17827,7 +17772,7 @@ W = angled&lt;p&gt;
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="S1" gate="G$1" pin="1"/>
+<pinref part="S5" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="50.8" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="50.8" x2="119.38" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -17858,12 +17803,6 @@ W = angled&lt;p&gt;
 <junction x="27.94" y="33.02"/>
 </segment>
 <segment>
-<pinref part="B1" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="78.74" x2="10.16" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="10.16" y1="78.74" x2="10.16" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="-10.16" y1="40.64" x2="-10.16" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="S2" gate="G$1" pin="2"/>
@@ -17886,22 +17825,23 @@ W = angled&lt;p&gt;
 <wire x1="-20.32" y1="68.58" x2="-20.32" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="G$1" pin="2"/>
+<pinref part="OLED" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="78.74" x2="152.4" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="78.74" x2="152.4" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="88.9" x2="144.78" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="144.78" y1="88.9" x2="144.78" y2="86.36" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$1" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="B1" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="86.36" x2="25.4" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="78.74" x2="25.4" y2="78.74" width="0.1524" layer="91"/>
-<junction x="25.4" y="78.74"/>
+<pinref part="S1" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="78.74" x2="5.08" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="5.08" y1="78.74" x2="0" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="0" y1="78.74" x2="0" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="81.28" x2="5.08" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="81.28" x2="5.08" y2="78.74" width="0.1524" layer="91"/>
+<junction x="5.08" y="78.74"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -17921,7 +17861,7 @@ W = angled&lt;p&gt;
 <wire x1="129.54" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="68.58" x2="149.86" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="68.58" x2="149.86" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="G$1" pin="5"/>
+<pinref part="OLED" gate="G$1" pin="5"/>
 <wire x1="149.86" y1="71.12" x2="162.56" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -17936,7 +17876,7 @@ W = angled&lt;p&gt;
 <wire x1="78.74" y1="73.66" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="73.66" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
 <junction x="134.62" y="73.66"/>
-<pinref part="SV1" gate="G$1" pin="4"/>
+<pinref part="OLED" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -17972,7 +17912,7 @@ W = angled&lt;p&gt;
 <junction x="91.44" y="58.42"/>
 <wire x1="91.44" y1="58.42" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="50.8" x2="101.6" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="2"/>
+<pinref part="S5" gate="G$1" pin="2"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="63.5" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
 </segment>
@@ -18107,9 +18047,25 @@ W = angled&lt;p&gt;
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="8"/>
+<pinref part="OLED" gate="G$1" pin="8"/>
 <wire x1="162.56" y1="63.5" x2="157.48" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="63.5" x2="157.48" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="S1" gate="G$1" pin="3"/>
+<wire x1="17.78" y1="81.28" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="81.28" x2="20.32" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="4"/>
+<wire x1="20.32" y1="78.74" x2="17.78" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="86.36" x2="25.4" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="78.74" x2="25.4" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="78.74" x2="25.4" y2="78.74" width="0.1524" layer="91"/>
+<junction x="20.32" y="78.74"/>
+<junction x="25.4" y="78.74"/>
 </segment>
 </net>
 </nets>
