@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.3.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="251" name="bxdocu" color="7" fill="1" visible="no" active="yes"/>
+</layers>
+<library>
+<description>&lt;h2&gt;&lt;b&gt;Pololu Modules&lt;/h2&gt;
+
+&lt;pre&gt;&lt;b&gt;
+SOURCE&lt;/b&gt;
+&lt;a href="www.pololu.com/" target="_blank"&gt;www.pololu.com/&lt;/a&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;
+CHANGELOG&lt;/b&gt;
+&lt;b&gt;5.3.0&lt;/b&gt;  2013-10-09  changed:  symbol 'IOGS': pin SHDN: pas --&gt; in
+                             (SHDN must not be left open)
+5.2.0  2013-07-24  added:    VNH2SP30 and VNH3SP30 MD01B Motor Driver Carrier Board
+                   changed:  Library Header
+5.1.0  2013-07-02  added:    Voltage Regulator Modules D24V3A_V, D24V6A_V
+5.0.0  2013-06-12  initial:  Adjustable Step Down Voltage Regulators Series D24V3A_V
+&amp;nbsp;&lt;/pre&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;
+Author: &lt;author&gt;Dipl.-Ing. FH Rainer Bayer&lt;/author&lt;/b&gt;
+Heilbronn University  HHN         &lt;a href="http://www.hs-heilbronn.de/rainer.bayer" target="_blank"&gt;http://www.hs-heilbronn.de/rainer.bayer&lt;/a&gt; &amp;middot; &lt;a href="mailto:rainer.bayer@hs-heilbronn.de" target="_blank"&gt;rainer.bayer@hs-heilbronn.de&lt;/a&gt;
+Engineering office    ing-rb:     &lt;a href="http://www.ing-rb.de/" target="_blank"&gt;http://www.ing-rb.de/&lt;/a&gt;                   &amp;middot; &lt;a href="mailto:eagle@ing-rb.de" target="_blank"&gt;eagle@ing-rb.de&lt;/a&gt;
+Lectureship           dozent-rb:  &lt;a href="http://www.dozent-rb.de/" target="_blank"&gt;http://www.dozent-rb.de/&lt;/a&gt;                &amp;middot; &lt;a href="mailto:eagle@dozent-rb.de" target="_blank"&gt;eagle@dozent-rb.de&lt;/a&gt;&lt;/pre&gt;&lt;/author&gt;&lt;/pre&gt;</description>
+<packages>
+<package name="POLOLU_D24V3F_HN">
+<description>&lt;p&gt;&lt;b&gt;POLOLU_D24V3FX_HN&lt;/b&gt;&lt;br /&gt;
+asseymbly: horizontal, top view: non-component's side&lt;/p&gt;</description>
+<wire x1="-5.08" y1="-6.985" x2="-5.08" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-4.445" x2="-5.08" y2="5.715" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="5.715" x2="5.08" y2="5.715" width="0.127" layer="21"/>
+<wire x1="5.08" y1="5.715" x2="5.08" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-4.445" x2="5.08" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-6.985" x2="2.54" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-6.985" x2="0" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="0" y1="-6.985" x2="-2.54" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-6.985" x2="-5.08" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-4.445" x2="-2.54" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-4.445" x2="0" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="0" y1="-4.445" x2="2.54" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-4.445" x2="5.08" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-4.445" x2="-2.54" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="0" y1="-4.445" x2="0" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-4.445" x2="2.54" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="5.3975" y1="-4.1275" x2="5.3975" y2="-7.3025" width="0.1016" layer="39"/>
+<wire x1="5.3975" y1="-7.3025" x2="-5.3975" y2="-7.3025" width="0.1016" layer="39"/>
+<wire x1="-5.3975" y1="-7.3025" x2="-5.3975" y2="-4.1275" width="0.1016" layer="39"/>
+<wire x1="-5.3975" y1="-4.1275" x2="5.3975" y2="-4.1275" width="0.1016" layer="39"/>
+<pad name="O" x="-3.81" y="-5.715" drill="1" shape="square"/>
+<pad name="G" x="-1.27" y="-5.715" drill="1" first="yes"/>
+<pad name="I" x="1.27" y="-5.715" drill="1" shape="square"/>
+<pad name="S" x="3.81" y="-5.715" drill="1" shape="square"/>
+<text x="-5.08" y="6.096" size="1.4224" layer="25" ratio="9">&gt;NAME</text>
+<text x="-4.445" y="3.81" size="1.4224" layer="27" ratio="9">&gt;VALUE</text>
+<text x="-4.445" y="-1.905" size="1.27" layer="51">NON-C.-</text>
+<text x="-4.445" y="-3.81" size="1.27" layer="51">SIDE</text>
+<text x="-4.445" y="0" size="1.27" layer="51">MOD.-TOP:</text>
+</package>
+<package name="POLOLU_D24V3F_HC">
+<description>&lt;p&gt;&lt;b&gt;POLOLU_D24V3FX_HC&lt;/b&gt;&lt;br /&gt;
+asseymbly: horizontal, top view: component's side&lt;/p&gt;</description>
+<wire x1="-5.08" y1="-6.985" x2="-5.08" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-4.445" x2="-5.08" y2="5.715" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="5.715" x2="5.08" y2="5.715" width="0.127" layer="21"/>
+<wire x1="5.08" y1="5.715" x2="5.08" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-4.445" x2="5.08" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-6.985" x2="2.54" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-6.985" x2="0" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="0" y1="-6.985" x2="-2.54" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-6.985" x2="-5.08" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-4.445" x2="-2.54" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-4.445" x2="0" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="0" y1="-4.445" x2="2.54" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-4.445" x2="5.08" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-4.445" x2="-2.54" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="0" y1="-4.445" x2="0" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-4.445" x2="2.54" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="5.3975" y1="-4.1275" x2="5.3975" y2="-7.3025" width="0.1016" layer="39"/>
+<wire x1="5.3975" y1="-7.3025" x2="-5.3975" y2="-7.3025" width="0.1016" layer="39"/>
+<wire x1="-5.3975" y1="-7.3025" x2="-5.3975" y2="-4.1275" width="0.1016" layer="39"/>
+<wire x1="-5.3975" y1="-4.1275" x2="5.3975" y2="-4.1275" width="0.1016" layer="39"/>
+<pad name="S" x="-3.81" y="-5.715" drill="1" shape="square"/>
+<pad name="I" x="-1.27" y="-5.715" drill="1" shape="square"/>
+<pad name="G" x="1.27" y="-5.715" drill="1" first="yes"/>
+<pad name="O" x="3.81" y="-5.715" drill="1" shape="square"/>
+<text x="-4.445" y="-1.905" size="1.27" layer="51">COMPON.-</text>
+<text x="-4.445" y="-3.81" size="1.27" layer="51">SIDE</text>
+<text x="-5.08" y="6.096" size="1.4224" layer="25" ratio="9">&gt;NAME</text>
+<text x="-4.445" y="3.81" size="1.4224" layer="27" ratio="9">&gt;VALUE</text>
+<text x="-4.445" y="0" size="1.27" layer="51">MOD.-TOP:</text>
+</package>
+<package name="POLOLU_D24VXAYV_HC">
+<description>&lt;p&gt;&lt;b&gt;POLOLU_D24VxAyV_HC&lt;/b&gt;&lt;br /&gt;
+asseymbly: horizontal, top view: component's side&lt;/p&gt;</description>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="8.89" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="8.89" x2="5.08" y2="8.89" width="0.127" layer="21"/>
+<wire x1="5.08" y1="8.89" x2="5.08" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-10.16" x2="2.54" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-10.16" x2="0" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="0" y1="-10.16" x2="-2.54" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-10.16" x2="-5.08" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-7.62" x2="-2.54" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-7.62" x2="0" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="0" y1="-7.62" x2="2.54" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-7.62" x2="5.08" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-7.62" x2="-2.54" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="0" y1="-7.62" x2="0" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="5.3975" y1="-7.3025" x2="5.3975" y2="-10.4775" width="0.1016" layer="39"/>
+<wire x1="5.3975" y1="-10.4775" x2="-5.3975" y2="-10.4775" width="0.1016" layer="39"/>
+<wire x1="-5.3975" y1="-10.4775" x2="-5.3975" y2="-7.3025" width="0.1016" layer="39"/>
+<wire x1="-5.3975" y1="-7.3025" x2="5.3975" y2="-7.3025" width="0.1016" layer="39"/>
+<wire x1="1.27" y1="5.715" x2="3.81" y2="6.985" width="0.127" layer="51"/>
+<circle x="2.54" y="6.35" radius="1.4199" width="0.127" layer="51"/>
+<pad name="S" x="-3.81" y="-8.89" drill="1" shape="square"/>
+<pad name="I" x="-1.27" y="-8.89" drill="1" shape="square"/>
+<pad name="G" x="1.27" y="-8.89" drill="1" first="yes"/>
+<pad name="O" x="3.81" y="-8.89" drill="1" shape="square"/>
+<text x="-4.445" y="-5.08" size="1.27" layer="251">COMPON.-</text>
+<text x="-4.445" y="-6.985" size="1.27" layer="251">SIDE</text>
+<text x="-5.08" y="9.271" size="1.4224" layer="25" ratio="9">&gt;NAME</text>
+<text x="-4.445" y="2.54" size="1.4224" layer="27" ratio="9">&gt;VALUE</text>
+<text x="-4.445" y="-3.175" size="1.27" layer="251">MOD.-TOP:</text>
+</package>
+<package name="POLOLU_MD01B_P">
+<description>&lt;p&gt;POLOLU MD01B&lt;br /&gt;
+&lt;b&gt;plated&lt;/b&gt; auxilary OUTA-connections &lt;/p&gt;</description>
+<wire x1="-19.05" y1="-14.9225" x2="-19.05" y2="14.9225" width="0.2032" layer="21"/>
+<wire x1="-19.05" y1="14.9225" x2="19.05" y2="14.9225" width="0.2032" layer="21"/>
+<wire x1="19.05" y1="14.9225" x2="19.05" y2="-14.9225" width="0.2032" layer="21"/>
+<wire x1="19.05" y1="-14.9225" x2="-19.05" y2="-14.9225" width="0.2032" layer="21"/>
+<wire x1="-18.7722" y1="8.4534" x2="-16.2322" y2="8.4534" width="0.1016" layer="39"/>
+<wire x1="-16.2322" y1="8.4534" x2="-16.2322" y2="-11.8666" width="0.1016" layer="39"/>
+<wire x1="-16.2322" y1="-11.8666" x2="-18.7722" y2="-11.8666" width="0.1016" layer="39"/>
+<wire x1="-18.7722" y1="-11.8666" x2="-18.7722" y2="8.4534" width="0.1016" layer="39"/>
+<wire x1="-17.8222" y1="7.5034" x2="-17.1822" y2="7.5034" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="7.5034" x2="-17.1822" y2="6.8634" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="6.8634" x2="-17.8222" y2="6.8634" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="6.8634" x2="-17.8222" y2="7.5034" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="4.9634" x2="-17.1822" y2="4.9634" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="4.9634" x2="-17.1822" y2="4.3234" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="4.3234" x2="-17.8222" y2="4.3234" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="4.3234" x2="-17.8222" y2="4.9634" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="2.4234" x2="-17.1822" y2="2.4234" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="2.4234" x2="-17.1822" y2="1.7834" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="1.7834" x2="-17.8222" y2="1.7834" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="1.7834" x2="-17.8222" y2="2.4234" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-0.1166" x2="-17.1822" y2="-0.1166" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-0.1166" x2="-17.1822" y2="-0.7566" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-0.7566" x2="-17.8222" y2="-0.7566" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-0.7566" x2="-17.8222" y2="-0.1166" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-2.6566" x2="-17.1822" y2="-2.6566" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-2.6566" x2="-17.1822" y2="-3.2966" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-3.2966" x2="-17.8222" y2="-3.2966" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-3.2966" x2="-17.8222" y2="-2.6566" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-5.1966" x2="-17.1822" y2="-5.1966" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-5.1966" x2="-17.1822" y2="-5.8366" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-5.8366" x2="-17.8222" y2="-5.8366" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-5.8366" x2="-17.8222" y2="-5.1966" width="0.1524" layer="51"/>
+<wire x1="-18.7722" y1="8.4534" x2="-16.2322" y2="8.4534" width="0.1524" layer="51"/>
+<wire x1="-16.2322" y1="8.4534" x2="-16.2322" y2="-6.7866" width="0.1524" layer="51"/>
+<wire x1="-16.2322" y1="-6.7866" x2="-18.7722" y2="-6.7866" width="0.1524" layer="51"/>
+<wire x1="-18.7722" y1="-6.7866" x2="-18.7722" y2="8.4534" width="0.1524" layer="51"/>
+<wire x1="-16.2322" y1="-11.8666" x2="-18.7722" y2="-11.8666" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-8.3766" x2="-17.8222" y2="-8.3766" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-10.9166" x2="-17.8222" y2="-10.9166" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-7.7366" x2="-17.1822" y2="-7.7366" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-10.2766" x2="-17.1822" y2="-10.2766" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-8.3766" x2="-17.8222" y2="-7.7366" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-7.7366" x2="-17.1822" y2="-8.3766" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-10.9166" x2="-17.8222" y2="-10.2766" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-10.2766" x2="-17.1822" y2="-10.9166" width="0.1524" layer="51"/>
+<wire x1="-18.7722" y1="-11.8666" x2="-18.7722" y2="-6.7866" width="0.1524" layer="51"/>
+<wire x1="-16.2322" y1="-6.7866" x2="-16.2322" y2="-11.8666" width="0.1524" layer="51"/>
+<pad name="OUTA2" x="-15.875" y="11.7475" drill="3"/>
+<pad name="OUTA3" x="15.875" y="11.7475" drill="3"/>
+<pad name="BYP" x="15.24" y="-6.0325" drill="2"/>
+<pad name="OUTB" x="15.24" y="0.3175" drill="2"/>
+<pad name="OUTA1" x="15.24" y="5.3975" drill="2"/>
+<pad name="GND1" x="-17.526" y="-10.6045" drill="1" shape="square" first="yes"/>
+<pad name="VIO" x="-17.526" y="-8.0645" drill="1"/>
+<pad name="INB" x="-17.526" y="-5.5245" drill="1"/>
+<pad name="ENB" x="-17.526" y="-2.9845" drill="1"/>
+<pad name="SENSE" x="-17.526" y="-0.4445" drill="1"/>
+<pad name="PWM" x="-17.526" y="2.0955" drill="1"/>
+<pad name="ENA" x="-17.526" y="4.6355" drill="1"/>
+<pad name="INA" x="-17.526" y="7.1755" drill="1"/>
+<pad name="VMOT" x="-8.128" y="-11.1125" drill="2"/>
+<pad name="GND2" x="-3.048" y="-11.1125" drill="2"/>
+<text x="-19.05" y="15.24" size="1.4224" layer="25" ratio="9">&gt;NAME</text>
+<text x="19.365" y="16.7" size="1.4224" layer="27" ratio="9" rot="R180">&gt;VALUE</text>
+<text x="-15.8" y="6.6" size="1.27" layer="51" ratio="9">INA</text>
+<text x="-15.8" y="4" size="1.27" layer="51" ratio="9">ENA</text>
+<text x="-15.8" y="1.5" size="1.27" layer="51" ratio="9">PWM</text>
+<text x="-15.8" y="-1.1" size="1.27" layer="51" ratio="9">SENSE</text>
+<text x="-15.7" y="-3.7" size="1.27" layer="51" ratio="9">ENB</text>
+<text x="-15.8" y="-6.1" size="1.27" layer="51" ratio="9">INB</text>
+<text x="-15.8" y="-8.7" size="1.27" layer="51" ratio="9">VIO</text>
+<text x="-15.8" y="-11.2" size="1.27" layer="51" ratio="9">GND1</text>
+<text x="-7.5" y="-9" size="1.27" layer="51" ratio="9" rot="R90">VMOT</text>
+<text x="-2.5" y="-9" size="1.27" layer="51" ratio="9" rot="R90">GND2</text>
+<text x="13.2" y="1.1" size="1.27" layer="51" ratio="9" rot="R180">OUTB</text>
+<text x="13.3" y="6.1" size="1.27" layer="51" ratio="9" rot="R180">OUTA1</text>
+<text x="13.2" y="-5.4" size="1.27" layer="51" ratio="9" rot="R180">BYP</text>
+<text x="-13" y="11.3" size="1.27" layer="51" ratio="9">OUTA2</text>
+<text x="13.4" y="12.6" size="1.27" layer="51" ratio="9" rot="R180">OUTA3</text>
+<hole x="15.875" y="-11.7729" drill="3"/>
+</package>
+<package name="POLOLU_MD01B_U">
+<description>&lt;p&gt;POLOLU MD01B&lt;br /&gt;
+&lt;b&gt;unplated&lt;/b&gt; auxilary OUTA-connections &lt;/p&gt;</description>
+<wire x1="-19.05" y1="-14.9225" x2="-19.05" y2="14.9225" width="0.2032" layer="21"/>
+<wire x1="-19.05" y1="14.9225" x2="19.05" y2="14.9225" width="0.2032" layer="21"/>
+<wire x1="19.05" y1="14.9225" x2="19.05" y2="-14.9225" width="0.2032" layer="21"/>
+<wire x1="19.05" y1="-14.9225" x2="-19.05" y2="-14.9225" width="0.2032" layer="21"/>
+<wire x1="-18.7722" y1="8.4534" x2="-16.2322" y2="8.4534" width="0.1016" layer="39"/>
+<wire x1="-16.2322" y1="8.4534" x2="-16.2322" y2="-11.8666" width="0.1016" layer="39"/>
+<wire x1="-16.2322" y1="-11.8666" x2="-18.7722" y2="-11.8666" width="0.1016" layer="39"/>
+<wire x1="-18.7722" y1="-11.8666" x2="-18.7722" y2="8.4534" width="0.1016" layer="39"/>
+<wire x1="-17.8222" y1="7.5034" x2="-17.1822" y2="7.5034" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="7.5034" x2="-17.1822" y2="6.8634" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="6.8634" x2="-17.8222" y2="6.8634" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="6.8634" x2="-17.8222" y2="7.5034" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="4.9634" x2="-17.1822" y2="4.9634" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="4.9634" x2="-17.1822" y2="4.3234" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="4.3234" x2="-17.8222" y2="4.3234" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="4.3234" x2="-17.8222" y2="4.9634" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="2.4234" x2="-17.1822" y2="2.4234" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="2.4234" x2="-17.1822" y2="1.7834" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="1.7834" x2="-17.8222" y2="1.7834" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="1.7834" x2="-17.8222" y2="2.4234" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-0.1166" x2="-17.1822" y2="-0.1166" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-0.1166" x2="-17.1822" y2="-0.7566" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-0.7566" x2="-17.8222" y2="-0.7566" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-0.7566" x2="-17.8222" y2="-0.1166" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-2.6566" x2="-17.1822" y2="-2.6566" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-2.6566" x2="-17.1822" y2="-3.2966" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-3.2966" x2="-17.8222" y2="-3.2966" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-3.2966" x2="-17.8222" y2="-2.6566" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-5.1966" x2="-17.1822" y2="-5.1966" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-5.1966" x2="-17.1822" y2="-5.8366" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-5.8366" x2="-17.8222" y2="-5.8366" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-5.8366" x2="-17.8222" y2="-5.1966" width="0.1524" layer="51"/>
+<wire x1="-18.7722" y1="8.4534" x2="-16.2322" y2="8.4534" width="0.1524" layer="51"/>
+<wire x1="-16.2322" y1="8.4534" x2="-16.2322" y2="-6.7866" width="0.1524" layer="51"/>
+<wire x1="-16.2322" y1="-6.7866" x2="-18.7722" y2="-6.7866" width="0.1524" layer="51"/>
+<wire x1="-18.7722" y1="-6.7866" x2="-18.7722" y2="8.4534" width="0.1524" layer="51"/>
+<wire x1="-16.2322" y1="-11.8666" x2="-18.7722" y2="-11.8666" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-8.3766" x2="-17.8222" y2="-8.3766" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-10.9166" x2="-17.8222" y2="-10.9166" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-7.7366" x2="-17.1822" y2="-7.7366" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-10.2766" x2="-17.1822" y2="-10.2766" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-8.3766" x2="-17.8222" y2="-7.7366" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-7.7366" x2="-17.1822" y2="-8.3766" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-10.9166" x2="-17.8222" y2="-10.2766" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-10.2766" x2="-17.1822" y2="-10.9166" width="0.1524" layer="51"/>
+<wire x1="-18.7722" y1="-11.8666" x2="-18.7722" y2="-6.7866" width="0.1524" layer="51"/>
+<wire x1="-16.2322" y1="-6.7866" x2="-16.2322" y2="-11.8666" width="0.1524" layer="51"/>
+<pad name="BYP" x="15.24" y="-6.0325" drill="2"/>
+<pad name="OUTB" x="15.24" y="0.3175" drill="2"/>
+<pad name="OUTA1" x="15.24" y="5.3975" drill="2"/>
+<pad name="GND1" x="-17.526" y="-10.6045" drill="1" shape="square" first="yes"/>
+<pad name="VIO" x="-17.526" y="-8.0645" drill="1"/>
+<pad name="INB" x="-17.526" y="-5.5245" drill="1"/>
+<pad name="ENB" x="-17.526" y="-2.9845" drill="1"/>
+<pad name="SENSE" x="-17.526" y="-0.4445" drill="1"/>
+<pad name="PWM" x="-17.526" y="2.0955" drill="1"/>
+<pad name="ENA" x="-17.526" y="4.6355" drill="1"/>
+<pad name="INA" x="-17.526" y="7.1755" drill="1"/>
+<pad name="VMOT" x="-8.128" y="-11.1125" drill="2"/>
+<pad name="GND2" x="-3.048" y="-11.1125" drill="2"/>
+<text x="-19.05" y="15.24" size="1.4224" layer="25" ratio="9">&gt;NAME</text>
+<text x="19.365" y="16.7" size="1.4224" layer="27" ratio="9" rot="R180">&gt;VALUE</text>
+<text x="-15.8" y="6.6" size="1.27" layer="51" ratio="9">INA</text>
+<text x="-15.8" y="4" size="1.27" layer="51" ratio="9">ENA</text>
+<text x="-15.8" y="1.5" size="1.27" layer="51" ratio="9">PWM</text>
+<text x="-15.8" y="-1.1" size="1.27" layer="51" ratio="9">SENSE</text>
+<text x="-15.7" y="-3.7" size="1.27" layer="51" ratio="9">ENB</text>
+<text x="-15.8" y="-6.1" size="1.27" layer="51" ratio="9">INB</text>
+<text x="-15.8" y="-8.7" size="1.27" layer="51" ratio="9">VIO</text>
+<text x="-15.8" y="-11.2" size="1.27" layer="51" ratio="9">GND1</text>
+<text x="-7.5" y="-9" size="1.27" layer="51" ratio="9" rot="R90">VMOT</text>
+<text x="-2.5" y="-9" size="1.27" layer="51" ratio="9" rot="R90">GND2</text>
+<text x="13.2" y="1.1" size="1.27" layer="51" ratio="9" rot="R180">OUTB</text>
+<text x="13.3" y="6.1" size="1.27" layer="51" ratio="9" rot="R180">OUTA1</text>
+<text x="13.2" y="-5.4" size="1.27" layer="51" ratio="9" rot="R180">BYP</text>
+<hole x="15.875" y="-11.7729" drill="3"/>
+<hole x="-15.875" y="11.7475" drill="3"/>
+<hole x="15.875" y="11.7475" drill="3"/>
+</package>
+<package name="POLOLU_MD01B_X">
+<description>&lt;p&gt;POLOLU MD01B&lt;br /&gt;
+&lt;b&gt;no pads for OUTx, BYPASS, VMOT, GND2 &lt;/p&gt;</description>
+<wire x1="-19.05" y1="-14.9225" x2="-19.05" y2="14.9225" width="0.2032" layer="21"/>
+<wire x1="-19.05" y1="14.9225" x2="19.05" y2="14.9225" width="0.2032" layer="21"/>
+<wire x1="19.05" y1="14.9225" x2="19.05" y2="-14.9225" width="0.2032" layer="21"/>
+<wire x1="19.05" y1="-14.9225" x2="-19.05" y2="-14.9225" width="0.2032" layer="21"/>
+<wire x1="-18.7722" y1="8.4534" x2="-16.2322" y2="8.4534" width="0.1016" layer="39"/>
+<wire x1="-16.2322" y1="8.4534" x2="-16.2322" y2="-11.8666" width="0.1016" layer="39"/>
+<wire x1="-16.2322" y1="-11.8666" x2="-18.7722" y2="-11.8666" width="0.1016" layer="39"/>
+<wire x1="-18.7722" y1="-11.8666" x2="-18.7722" y2="8.4534" width="0.1016" layer="39"/>
+<wire x1="-17.8222" y1="7.5034" x2="-17.1822" y2="7.5034" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="7.5034" x2="-17.1822" y2="6.8634" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="6.8634" x2="-17.8222" y2="6.8634" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="6.8634" x2="-17.8222" y2="7.5034" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="4.9634" x2="-17.1822" y2="4.9634" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="4.9634" x2="-17.1822" y2="4.3234" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="4.3234" x2="-17.8222" y2="4.3234" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="4.3234" x2="-17.8222" y2="4.9634" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="2.4234" x2="-17.1822" y2="2.4234" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="2.4234" x2="-17.1822" y2="1.7834" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="1.7834" x2="-17.8222" y2="1.7834" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="1.7834" x2="-17.8222" y2="2.4234" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-0.1166" x2="-17.1822" y2="-0.1166" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-0.1166" x2="-17.1822" y2="-0.7566" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-0.7566" x2="-17.8222" y2="-0.7566" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-0.7566" x2="-17.8222" y2="-0.1166" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-2.6566" x2="-17.1822" y2="-2.6566" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-2.6566" x2="-17.1822" y2="-3.2966" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-3.2966" x2="-17.8222" y2="-3.2966" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-3.2966" x2="-17.8222" y2="-2.6566" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-5.1966" x2="-17.1822" y2="-5.1966" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-5.1966" x2="-17.1822" y2="-5.8366" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-5.8366" x2="-17.8222" y2="-5.8366" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-5.8366" x2="-17.8222" y2="-5.1966" width="0.1524" layer="51"/>
+<wire x1="-18.7722" y1="8.4534" x2="-16.2322" y2="8.4534" width="0.1524" layer="51"/>
+<wire x1="-16.2322" y1="8.4534" x2="-16.2322" y2="-6.7866" width="0.1524" layer="51"/>
+<wire x1="-16.2322" y1="-6.7866" x2="-18.7722" y2="-6.7866" width="0.1524" layer="51"/>
+<wire x1="-18.7722" y1="-6.7866" x2="-18.7722" y2="8.4534" width="0.1524" layer="51"/>
+<wire x1="-16.2322" y1="-11.8666" x2="-18.7722" y2="-11.8666" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-8.3766" x2="-17.8222" y2="-8.3766" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-10.9166" x2="-17.8222" y2="-10.9166" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-7.7366" x2="-17.1822" y2="-7.7366" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-10.2766" x2="-17.1822" y2="-10.2766" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-8.3766" x2="-17.8222" y2="-7.7366" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-7.7366" x2="-17.1822" y2="-8.3766" width="0.1524" layer="51"/>
+<wire x1="-17.8222" y1="-10.9166" x2="-17.8222" y2="-10.2766" width="0.1524" layer="51"/>
+<wire x1="-17.1822" y1="-10.2766" x2="-17.1822" y2="-10.9166" width="0.1524" layer="51"/>
+<wire x1="-18.7722" y1="-11.8666" x2="-18.7722" y2="-6.7866" width="0.1524" layer="51"/>
+<wire x1="-16.2322" y1="-6.7866" x2="-16.2322" y2="-11.8666" width="0.1524" layer="51"/>
+<wire x1="-10.6" y1="-8" x2="-5.6" y2="-8" width="0.127" layer="21"/>
+<wire x1="-5.6" y1="-8" x2="-5.6" y2="-14.9" width="0.127" layer="21"/>
+<wire x1="-10.6" y1="-8" x2="-10.6" y2="-14.9" width="0.127" layer="21"/>
+<wire x1="-5.6" y1="-8" x2="-0.6" y2="-8" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-8" x2="-0.6" y2="-14.9" width="0.127" layer="21"/>
+<wire x1="-9" y1="-12" x2="-7.2" y2="-10.2" width="0.127" layer="21"/>
+<wire x1="-4" y1="-12" x2="-2.2" y2="-10.2" width="0.127" layer="21"/>
+<wire x1="12.2" y1="-2.2" x2="12.2" y2="2.8" width="0.127" layer="21"/>
+<wire x1="12.2" y1="2.8" x2="19.1" y2="2.8" width="0.127" layer="21"/>
+<wire x1="12.2" y1="-2.2" x2="19.1" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="12.2" y1="2.8" x2="12.2" y2="7.8" width="0.127" layer="21"/>
+<wire x1="12.2" y1="7.8" x2="19.1" y2="7.8" width="0.127" layer="21"/>
+<wire x1="16.2" y1="-0.6" x2="14.4" y2="1.2" width="0.127" layer="21"/>
+<wire x1="16.2" y1="4.4" x2="14.4" y2="6.2" width="0.127" layer="21"/>
+<wire x1="12.1" y1="-8.5" x2="12.1" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="12.1" y1="-3.5" x2="19" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="12.1" y1="-8.5" x2="19" y2="-8.5" width="0.127" layer="21"/>
+<wire x1="16.1" y1="-6.9" x2="14.3" y2="-5.1" width="0.127" layer="21"/>
+<circle x="-8.1" y="-11.1" radius="1.5" width="0.127" layer="21"/>
+<circle x="-3.1" y="-11.1" radius="1.5" width="0.127" layer="21"/>
+<circle x="15.3" y="0.3" radius="1.5" width="0.127" layer="21"/>
+<circle x="15.3" y="5.3" radius="1.5" width="0.127" layer="21"/>
+<circle x="15.2" y="-6" radius="1.5" width="0.127" layer="21"/>
+<pad name="GND1" x="-17.526" y="-10.6045" drill="1" shape="square" first="yes"/>
+<pad name="VIO" x="-17.526" y="-8.0645" drill="1"/>
+<pad name="INB" x="-17.526" y="-5.5245" drill="1"/>
+<pad name="ENB" x="-17.526" y="-2.9845" drill="1"/>
+<pad name="SENSE" x="-17.526" y="-0.4445" drill="1"/>
+<pad name="PWM" x="-17.526" y="2.0955" drill="1"/>
+<pad name="ENA" x="-17.526" y="4.6355" drill="1"/>
+<pad name="INA" x="-17.526" y="7.1755" drill="1"/>
+<text x="-19.05" y="15.24" size="1.4224" layer="25" ratio="9">&gt;NAME</text>
+<text x="19.365" y="16.7" size="1.4224" layer="27" ratio="9" rot="R180">&gt;VALUE</text>
+<text x="-7.4" y="-7.5" size="1.27" layer="51" ratio="9" rot="R90">VMOT</text>
+<text x="-2.3" y="-7.5" size="1.27" layer="51" ratio="9" rot="R90">GND2</text>
+<text x="12" y="1.1" size="1.27" layer="51" ratio="9" rot="R180">OUTB</text>
+<text x="12.1" y="6" size="1.27" layer="51" ratio="9" rot="R180">OUTA1</text>
+<text x="11.8" y="-5.4" size="1.27" layer="51" ratio="9" rot="R180">BYP</text>
+<text x="-15.8" y="6.6" size="1.27" layer="51" ratio="9">INA</text>
+<text x="-15.8" y="4" size="1.27" layer="51" ratio="9">ENA</text>
+<text x="-15.8" y="1.5" size="1.27" layer="51" ratio="9">PWM</text>
+<text x="-15.8" y="-1.1" size="1.27" layer="51" ratio="9">SENSE</text>
+<text x="-15.7" y="-3.7" size="1.27" layer="51" ratio="9">ENB</text>
+<text x="-15.8" y="-6.1" size="1.27" layer="51" ratio="9">INB</text>
+<text x="-15.8" y="-8.7" size="1.27" layer="51" ratio="9">VIO</text>
+<text x="-15.8" y="-11.2" size="1.27" layer="51" ratio="9">GND1</text>
+<hole x="15.875" y="-11.7729" drill="3"/>
+<hole x="-15.875" y="11.7475" drill="3"/>
+<hole x="15.875" y="11.7475" drill="3"/>
+</package>
+</packages>
+<symbols>
+<symbol name="POLOLU_IOGS">
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="8.382" size="1.6764" layer="95" ratio="12">&gt;NAME</text>
+<text x="-7.62" y="-12.7" size="1.6764" layer="96" ratio="9">&gt;VALUE</text>
+<pin name="VIN" x="-12.7" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="SHDN" x="-12.7" y="-7.62" visible="pin" length="middle" direction="in" function="dot"/>
+<pin name="VOUT" x="15.24" y="5.08" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="GND" x="15.24" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+<symbol name="POLOLU_VNH2SP30">
+<wire x1="-12.7" y1="17.78" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<text x="-12.7" y="18.542" size="1.6764" layer="95" ratio="12">&gt;NAME</text>
+<text x="-12.7" y="-22.86" size="1.6764" layer="96">&gt;VALUE</text>
+<pin name="INA" x="-15.24" y="10.16" visible="pin" length="short" direction="in"/>
+<pin name="INB" x="-15.24" y="5.08" visible="pin" length="short" direction="in"/>
+<pin name="ENA/DIAGA" x="-15.24" y="0" visible="pin" length="short" direction="oc"/>
+<pin name="ENB/DIAGB" x="-15.24" y="-5.08" visible="pin" length="short" direction="oc"/>
+<pin name="PWM" x="-15.24" y="15.24" visible="pin" length="short" direction="in"/>
+<pin name="VIO" x="-15.24" y="-10.16" visible="pin" length="short" direction="pwr"/>
+<pin name="GND@1" x="-15.24" y="-17.78" visible="pin" length="short" direction="pwr" swaplevel="2"/>
+<pin name="OUTA@1" x="17.78" y="10.16" visible="pin" length="short" direction="out" swaplevel="1" rot="R180"/>
+<pin name="OUTB" x="17.78" y="5.08" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="BYPASS" x="17.78" y="0" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="OUTA@2" x="17.78" y="12.7" visible="pin" length="short" direction="out" swaplevel="1" rot="R180"/>
+<pin name="OUTA@3" x="17.78" y="15.24" visible="pin" length="short" direction="out" swaplevel="1" rot="R180"/>
+<pin name="VMOT" x="17.78" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="GND@2" x="17.78" y="-17.78" visible="pin" length="short" direction="pwr" swaplevel="2" rot="R180"/>
+<pin name="SENSE" x="17.78" y="-5.08" visible="pin" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="POLOLU_VNH3SP30">
+<wire x1="-12.7" y1="17.78" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<text x="-12.7" y="18.542" size="1.6764" layer="95" ratio="12">&gt;NAME</text>
+<text x="-12.7" y="-22.86" size="1.6764" layer="96">&gt;VALUE</text>
+<pin name="INA" x="-15.24" y="10.16" visible="pin" length="short" direction="in"/>
+<pin name="INB" x="-15.24" y="5.08" visible="pin" length="short" direction="in"/>
+<pin name="ENA/DIAGA" x="-15.24" y="0" visible="pin" length="short" direction="oc"/>
+<pin name="ENB/DIAGB" x="-15.24" y="-5.08" visible="pin" length="short" direction="oc"/>
+<pin name="PWM" x="-15.24" y="15.24" visible="pin" length="short" direction="in"/>
+<pin name="VIO" x="-15.24" y="-10.16" visible="pin" length="short" direction="pwr"/>
+<pin name="GND@1" x="-15.24" y="-17.78" visible="pin" length="short" direction="pwr" swaplevel="2"/>
+<pin name="OUTA@1" x="17.78" y="10.16" visible="pin" length="short" direction="out" swaplevel="1" rot="R180"/>
+<pin name="OUTB" x="17.78" y="5.08" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="BYPASS" x="17.78" y="0" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="OUTA@2" x="17.78" y="12.7" visible="pin" length="short" direction="out" swaplevel="1" rot="R180"/>
+<pin name="OUTA@3" x="17.78" y="15.24" visible="pin" length="short" direction="out" swaplevel="1" rot="R180"/>
+<pin name="VMOT" x="17.78" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="GND@2" x="17.78" y="-17.78" visible="pin" length="short" direction="pwr" swaplevel="2" rot="R180"/>
+</symbol>
+<symbol name="POLOLU_VNH2SP30_U">
+<wire x1="-12.7" y1="17.78" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<text x="-12.7" y="18.542" size="1.6764" layer="95" ratio="12">&gt;NAME</text>
+<text x="-12.7" y="-22.86" size="1.6764" layer="96">&gt;VALUE</text>
+<pin name="INA" x="-15.24" y="10.16" visible="pin" length="short" direction="in"/>
+<pin name="INB" x="-15.24" y="5.08" visible="pin" length="short" direction="in"/>
+<pin name="ENA/DIAGA" x="-15.24" y="0" visible="pin" length="short" direction="oc"/>
+<pin name="ENB/DIAGB" x="-15.24" y="-5.08" visible="pin" length="short" direction="oc"/>
+<pin name="PWM" x="-15.24" y="15.24" visible="pin" length="short" direction="in"/>
+<pin name="VIO" x="-15.24" y="-10.16" visible="pin" length="short" direction="pwr"/>
+<pin name="GND@1" x="-15.24" y="-17.78" visible="pin" length="short" direction="pwr" swaplevel="2"/>
+<pin name="OUTA" x="17.78" y="10.16" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="OUTB" x="17.78" y="5.08" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="BYPASS" x="17.78" y="0" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="VMOT" x="17.78" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="GND@2" x="17.78" y="-17.78" visible="pin" length="short" direction="pwr" swaplevel="2" rot="R180"/>
+<pin name="SENSE" x="17.78" y="-5.08" visible="pin" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="POLOLU_VNH3SP30_U">
+<wire x1="-12.7" y1="17.78" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<text x="-12.7" y="18.542" size="1.6764" layer="95" ratio="12">&gt;NAME</text>
+<text x="-12.7" y="-22.86" size="1.6764" layer="96">&gt;VALUE</text>
+<pin name="INA" x="-15.24" y="10.16" visible="pin" length="short" direction="in"/>
+<pin name="INB" x="-15.24" y="5.08" visible="pin" length="short" direction="in"/>
+<pin name="ENA/DIAGA" x="-15.24" y="0" visible="pin" length="short" direction="oc"/>
+<pin name="ENB/DIAGB" x="-15.24" y="-5.08" visible="pin" length="short" direction="oc"/>
+<pin name="PWM" x="-15.24" y="15.24" visible="pin" length="short" direction="in"/>
+<pin name="VIO" x="-15.24" y="-10.16" visible="pin" length="short" direction="pwr"/>
+<pin name="GND@1" x="-15.24" y="-17.78" visible="pin" length="short" direction="pwr" swaplevel="2"/>
+<pin name="OUTA" x="17.78" y="10.16" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="OUTB" x="17.78" y="5.08" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="BYPASS" x="17.78" y="0" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="VMOT" x="17.78" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="GND@2" x="17.78" y="-17.78" visible="pin" length="short" direction="pwr" swaplevel="2" rot="R180"/>
+</symbol>
+<symbol name="POLOLU_VNH2SP30_X">
+<wire x1="-12.7" y1="17.78" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="15.24" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-17.78" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="5.08" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="15.24" y2="12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="12.7" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="15.24" y1="12.7" x2="20.32" y2="12.7" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="15.24" y1="10.16" x2="20.32" y2="10.16" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="15.24" y1="5.08" x2="20.32" y2="5.08" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="15.24" y1="0" x2="20.32" y2="0" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="15.24" y1="-10.16" x2="20.32" y2="-10.16" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="15.24" y1="-17.78" x2="20.32" y2="-17.78" width="0.1524" layer="94" style="shortdash"/>
+<text x="-12.7" y="18.542" size="1.6764" layer="95" ratio="12">&gt;NAME</text>
+<text x="-12.7" y="-22.86" size="1.6764" layer="96">&gt;VALUE</text>
+<text x="12.954" y="16.002" size="1.524" layer="94" rot="R180">OUTA</text>
+<text x="12.954" y="13.462" size="1.524" layer="94" rot="R180">OUTA</text>
+<text x="12.954" y="10.922" size="1.524" layer="94" rot="R180">OUTA</text>
+<text x="12.954" y="5.842" size="1.524" layer="94" rot="R180">OUTB</text>
+<text x="12.954" y="0.762" size="1.524" layer="94" rot="R180">BYPASS</text>
+<text x="12.954" y="-9.398" size="1.524" layer="94" rot="R180">VMOT</text>
+<text x="12.954" y="-17.018" size="1.524" layer="94" rot="R180">GND</text>
+<pin name="INA" x="-17.78" y="10.16" visible="pin" length="middle" direction="in"/>
+<pin name="INB" x="-17.78" y="5.08" visible="pin" length="middle" direction="in"/>
+<pin name="ENA/DIAGA" x="-17.78" y="0" visible="pin" length="middle" direction="oc"/>
+<pin name="ENB/DIAGB" x="-17.78" y="-5.08" visible="pin" length="middle" direction="oc"/>
+<pin name="PWM" x="-17.78" y="15.24" visible="pin" length="middle" direction="in"/>
+<pin name="VIO" x="-17.78" y="-10.16" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND@1" x="-17.78" y="-17.78" visible="pin" length="middle" direction="pwr"/>
+<pin name="SENSE" x="20.32" y="-5.08" visible="pin" length="middle" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="POLOLU_VNH3SP30_X">
+<wire x1="-12.7" y1="17.78" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="15.24" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-17.78" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="5.08" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="15.24" y2="12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="12.7" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="15.24" y1="12.7" x2="20.32" y2="12.7" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="15.24" y1="10.16" x2="20.32" y2="10.16" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="15.24" y1="5.08" x2="20.32" y2="5.08" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="15.24" y1="0" x2="20.32" y2="0" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="15.24" y1="-10.16" x2="20.32" y2="-10.16" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="15.24" y1="-17.78" x2="20.32" y2="-17.78" width="0.1524" layer="94" style="shortdash"/>
+<text x="-12.7" y="18.542" size="1.6764" layer="95" ratio="12">&gt;NAME</text>
+<text x="-12.7" y="-22.86" size="1.6764" layer="96">&gt;VALUE</text>
+<text x="12.954" y="16.002" size="1.524" layer="94" rot="R180">OUTA</text>
+<text x="12.954" y="13.462" size="1.524" layer="94" rot="R180">OUTA</text>
+<text x="12.954" y="10.922" size="1.524" layer="94" rot="R180">OUTA</text>
+<text x="12.954" y="5.842" size="1.524" layer="94" rot="R180">OUTB</text>
+<text x="12.954" y="0.762" size="1.524" layer="94" rot="R180">BYPASS</text>
+<text x="12.954" y="-9.398" size="1.524" layer="94" rot="R180">VMOT</text>
+<text x="12.954" y="-17.018" size="1.524" layer="94" rot="R180">GND</text>
+<pin name="INA" x="-17.78" y="10.16" visible="pin" length="middle" direction="in"/>
+<pin name="INB" x="-17.78" y="5.08" visible="pin" length="middle" direction="in"/>
+<pin name="ENA/DIAGA" x="-17.78" y="0" visible="pin" length="middle" direction="oc"/>
+<pin name="ENB/DIAGB" x="-17.78" y="-5.08" visible="pin" length="middle" direction="oc"/>
+<pin name="PWM" x="-17.78" y="15.24" visible="pin" length="middle" direction="in"/>
+<pin name="VIO" x="-17.78" y="-10.16" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND@1" x="-17.78" y="-17.78" visible="pin" length="middle" direction="pwr"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="POLOLU_D24V3F*" prefix="MOD">
+<description>&lt;h3&gt;&lt;b&gt;Pololu Step Down Voltage Regulators Series D24V3F_ (300 mA)&lt;br/&gt;0.4"x0.5"&lt;/h3&gt;
+
+&lt;pre&gt;&lt;b&gt;SOURCE&lt;/b&gt;
+&lt;a href="www.pololu.com/" target="_blank"&gt;www.pololu.com/&lt;/a&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;PACKAGE&lt;/b&gt;
+THT; 4-pin (0.1"); 0.4"x0.5"&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;TECHNOLOGIES&lt;/b&gt;
+D24V3F&amp;hellip;
+&lt;u&gt;     Vo/V   Vi/V (for max. Io)&lt;/u&gt;
+&lt;b&gt; X&lt;/b&gt;:   (generic)
+&lt;b&gt; 3&lt;/b&gt;:   3.3    3.8 ( 4.3) &amp;hellip; 42.0
+&lt;b&gt; 5&lt;/b&gt;:   5.0    6.0 ( 6.5) &amp;hellip; 42.0
+&lt;b&gt; 9&lt;/b&gt;:   9.0   10.5 (12.5) &amp;hellip; 42.0
+&lt;u&gt;&lt;b&gt;12&lt;/b&gt;:  12.0   14.0 (17.5) &amp;hellip; 42.0&lt;/u&gt;
+Io: 300 mA; Quiescent Current: 2 mA (SHDN: 20 uA)
+&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;author&gt;Author: Dipl.-Ing. FH Rainer Bayer&lt;/author&gt;&lt;pre&gt;</description>
+<gates>
+<gate name="G$1" symbol="POLOLU_IOGS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-HC" package="POLOLU_D24V3F_HC">
+<connects>
+<connect gate="G$1" pin="GND" pad="G"/>
+<connect gate="G$1" pin="SHDN" pad="S"/>
+<connect gate="G$1" pin="VIN" pad="I"/>
+<connect gate="G$1" pin="VOUT" pad="O"/>
+</connects>
+<technologies>
+<technology name="12"/>
+<technology name="3"/>
+<technology name="5"/>
+<technology name="9"/>
+<technology name="X"/>
+</technologies>
+</device>
+<device name="-HN" package="POLOLU_D24V3F_HN">
+<connects>
+<connect gate="G$1" pin="GND" pad="G"/>
+<connect gate="G$1" pin="SHDN" pad="S"/>
+<connect gate="G$1" pin="VIN" pad="I"/>
+<connect gate="G$1" pin="VOUT" pad="O"/>
+</connects>
+<technologies>
+<technology name="12"/>
+<technology name="3"/>
+<technology name="5"/>
+<technology name="9"/>
+<technology name="X"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POLOLU_D24V3A*V" prefix="MOD">
+<description>&lt;h3&gt;&lt;b&gt;Pololu Adjustable Step Down Voltage Regulators Series D24V3A_V (300 mA)&lt;br/&gt;0.4"x0.6"&lt;/h3&gt;
+
+&lt;pre&gt;&lt;b&gt;SOURCE&lt;/b&gt;
+&lt;a href="www.pololu.com/" target="_blank"&gt;www.pololu.com/&lt;/a&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;PACKAGE&lt;/b&gt;
+THT; 4-pin (0.1"); 0.4"x0.6"&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;TECHNOLOGIES&lt;/b&gt;
+D24V3A&amp;hellip;V
+Vi = (4.5&amp;hellip;42)V
+&lt;u&gt;     Vo/V (Vo &amp;lt; Vi)&lt;/u&gt;
+&lt;b&gt;X&lt;/b&gt;:  (generic)
+&lt;b&gt;L&lt;/b&gt;:  (2.5&amp;hellip; 7.5)
+&lt;u&gt;&lt;b&gt;H&lt;/b&gt;:  (4.0&amp;hellip;25.0)    &lt;/u&gt;
+Io: 300 mA; Quiescent Current: 2 mA (SHDN: 20 uA)
+&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;author&gt;Author: Dipl.-Ing. FH Rainer Bayer&lt;/author&gt;&lt;pre&gt;</description>
+<gates>
+<gate name="G$1" symbol="POLOLU_IOGS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POLOLU_D24VXAYV_HC">
+<connects>
+<connect gate="G$1" pin="GND" pad="G"/>
+<connect gate="G$1" pin="SHDN" pad="S"/>
+<connect gate="G$1" pin="VIN" pad="I"/>
+<connect gate="G$1" pin="VOUT" pad="O"/>
+</connects>
+<technologies>
+<technology name="H"/>
+<technology name="L"/>
+<technology name="X"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POLOLU_D24V6A*V" prefix="MOD">
+<description>&lt;h3&gt;&lt;b&gt;Pololu Adjustable Step Down Voltage Regulators Series D24V3A_V (600 mA)&lt;br/&gt;0.4"x0.6"&lt;/h3&gt;
+
+&lt;pre&gt;&lt;b&gt;SOURCE&lt;/b&gt;
+&lt;a href="www.pololu.com/" target="_blank"&gt;www.pololu.com/&lt;/a&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;PACKAGE&lt;/b&gt;
+THT; 4-pin (0.1"); 0.4"x0.6"&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;TECHNOLOGIES&lt;/b&gt;
+D24V3A&amp;hellip;V
+Vi = (4.5&amp;hellip;42)V
+&lt;u&gt;     Vo/V (Vo &amp;lt; Vi)&lt;/u&gt;
+&lt;b&gt;X&lt;/b&gt;:  (generic)
+&lt;b&gt;L&lt;/b&gt;:  (2.5&amp;hellip; 7.5)
+&lt;u&gt;&lt;b&gt;H&lt;/b&gt;:  (4.0&amp;hellip;25.0)    &lt;/u&gt;
+Io: 600 mA; Quiescent Current: 2 mA (SHDN: 20 uA)
+&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;author&gt;Author: Dipl.-Ing. FH Rainer Bayer&lt;/author&gt;&lt;pre&gt;</description>
+<gates>
+<gate name="G$1" symbol="POLOLU_IOGS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POLOLU_D24VXAYV_HC">
+<connects>
+<connect gate="G$1" pin="GND" pad="G"/>
+<connect gate="G$1" pin="SHDN" pad="S"/>
+<connect gate="G$1" pin="VIN" pad="I"/>
+<connect gate="G$1" pin="VOUT" pad="O"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POLOLU_VNH2SP30-MD01B" prefix="MOD">
+<description>&lt;h3&gt;POLOLU VNH2SP30 MD01B Motor Driver Carrier Board&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;With Current Sense Output&lt;/p&gt;
+
+&lt;pre&gt;&lt;b&gt;
+DEVICE VERSIONS&lt;/b&gt;
+*  [none]:  plated auxilary OUTA connections
+   -U   :  non-plated auxilary OUTA connections
+   -X   :  no symbol-pins for OUTx, BYPASS, VMOT, GND2 (drawing elements only)&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;SOURCE&lt;/b&gt;
+&lt;a href="www.pololu.com/" target="_blank"&gt;www.pololu.com/&lt;/a&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;SPECS&lt;/b&gt;
+Operatingg voltage VMOT           5.5 .. 16 V
+Logic Voltage      VIO            5 V typ.
+MOSFET on-resistance (per leg):   19 mOhm max.
+Max PWM frequency                 20 kHz
+Current sense                     0.13 V/A
+Over-voltage shutoff              16 V min. / 19 V typ.
+Logic input high threshold        3.25 V min.
+Time to overheat at 20 A           35 s
+Time to overheat at 15 A          150 s
+Current for infinite run time     14 A&lt;/pre&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;author&gt;Author: Dipl.-Ing. FH Rainer Bayer&lt;/author&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="POLOLU_VNH2SP30" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POLOLU_MD01B_P">
+<connects>
+<connect gate="G$1" pin="BYPASS" pad="BYP"/>
+<connect gate="G$1" pin="ENA/DIAGA" pad="ENA"/>
+<connect gate="G$1" pin="ENB/DIAGB" pad="ENB"/>
+<connect gate="G$1" pin="GND@1" pad="GND1"/>
+<connect gate="G$1" pin="GND@2" pad="GND2"/>
+<connect gate="G$1" pin="INA" pad="INA"/>
+<connect gate="G$1" pin="INB" pad="INB"/>
+<connect gate="G$1" pin="OUTA@1" pad="OUTA1"/>
+<connect gate="G$1" pin="OUTA@2" pad="OUTA2"/>
+<connect gate="G$1" pin="OUTA@3" pad="OUTA3"/>
+<connect gate="G$1" pin="OUTB" pad="OUTB"/>
+<connect gate="G$1" pin="PWM" pad="PWM"/>
+<connect gate="G$1" pin="SENSE" pad="SENSE"/>
+<connect gate="G$1" pin="VIO" pad="VIO"/>
+<connect gate="G$1" pin="VMOT" pad="VMOT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POLOLU_VNH3SP30-MD01B" prefix="MOD">
+<description>&lt;h3&gt;POLOLU VNH3SP30 MD01B Motor Driver Carrier Board&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;Without Current Sense Output&lt;/p&gt;
+
+&lt;pre&gt;&lt;b&gt;
+DEVICE VERSIONS&lt;/b&gt;
+   [none]:  plated auxilary OUTA connections
+*  -U   :  non-plated auxilary OUTA connections
+   -X   :  no symbol-pins for OUTx, BYPASS, VMOT, GND2 (drawing elements only)&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;SOURCE&lt;/b&gt;
+&lt;a href="www.pololu.com/" target="_blank"&gt;www.pololu.com/&lt;/a&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;SPECS&lt;/b&gt;
+Operatingg voltage VMOT           5.5 .. 16 V
+Logic Voltage      VIO            5 V typ.
+MOSFET on-resistance (per leg):   34 mOhm max.
+Max PWM frequency                 10 kHz
+Current sense                     n/a
+Over-voltage shutoff              36 V min. / 43 V typ.
+Logic input high threshold        3.25 V min.
+Time to overheat at 20 A           8 s
+Time to overheat at 15 A          30 s
+Current for infinite run time     9 A&lt;/pre&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;author&gt;Author: Dipl.-Ing. FH Rainer Bayer&lt;/author&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="POLOLU_VNH3SP30" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POLOLU_MD01B_P">
+<connects>
+<connect gate="G$1" pin="BYPASS" pad="BYP"/>
+<connect gate="G$1" pin="ENA/DIAGA" pad="ENA"/>
+<connect gate="G$1" pin="ENB/DIAGB" pad="ENB"/>
+<connect gate="G$1" pin="GND@1" pad="GND1"/>
+<connect gate="G$1" pin="GND@2" pad="GND2"/>
+<connect gate="G$1" pin="INA" pad="INA"/>
+<connect gate="G$1" pin="INB" pad="INB"/>
+<connect gate="G$1" pin="OUTA@1" pad="OUTA1"/>
+<connect gate="G$1" pin="OUTA@2" pad="OUTA2"/>
+<connect gate="G$1" pin="OUTA@3" pad="OUTA3"/>
+<connect gate="G$1" pin="OUTB" pad="OUTB"/>
+<connect gate="G$1" pin="PWM" pad="PWM"/>
+<connect gate="G$1" pin="VIO" pad="VIO"/>
+<connect gate="G$1" pin="VMOT" pad="VMOT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POLOLU_VNH2SP30-MD01B-U" prefix="MOD">
+<description>&lt;h3&gt;POLOLU VNH2SP30 MD01B Motor Driver Carrier Board&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;With Current Sense Output&lt;/p&gt;
+
+&lt;pre&gt;&lt;b&gt;
+DEVICE VERSIONS&lt;/b&gt;
+   [none]:  plated auxilary OUTA connections
+*  -U   :  non-plated auxilary OUTA connections
+   -X   :  no symbol-pins for OUTx, BYPASS, VMOT, GND2 (drawing elements only)&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;SOURCE
+&lt;/b&gt;&lt;a href="www.pololu.com/" target="_blank"&gt;www.pololu.com/&lt;/a&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;SPECS&lt;/b&gt;
+Operatingg voltage VMOT           5.5 .. 16 V
+Logic Voltage      VIO            5 V typ.
+MOSFET on-resistance (per leg):   19 mOhm max.
+Max PWM frequency                 20 kHz
+Current sense                     0.13 V/A
+Over-voltage shutoff              16 V min. / 19 V typ.
+Logic input high threshold        3.25 V min.
+Time to overheat at 20 A           35 s
+Time to overheat at 15 A          150 s
+Current for infinite run time     14 A&lt;/pre&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;author&gt;Author: Dipl.-Ing. FH Rainer Bayer&lt;/author&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="POLOLU_VNH2SP30_U" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POLOLU_MD01B_U">
+<connects>
+<connect gate="G$1" pin="BYPASS" pad="BYP"/>
+<connect gate="G$1" pin="ENA/DIAGA" pad="ENA"/>
+<connect gate="G$1" pin="ENB/DIAGB" pad="ENB"/>
+<connect gate="G$1" pin="GND@1" pad="GND1"/>
+<connect gate="G$1" pin="GND@2" pad="GND2"/>
+<connect gate="G$1" pin="INA" pad="INA"/>
+<connect gate="G$1" pin="INB" pad="INB"/>
+<connect gate="G$1" pin="OUTA" pad="OUTA1"/>
+<connect gate="G$1" pin="OUTB" pad="OUTB"/>
+<connect gate="G$1" pin="PWM" pad="PWM"/>
+<connect gate="G$1" pin="SENSE" pad="SENSE"/>
+<connect gate="G$1" pin="VIO" pad="VIO"/>
+<connect gate="G$1" pin="VMOT" pad="VMOT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POLOLU_VNH3SP30-MD01B-U" prefix="MOD">
+<description>&lt;h3&gt;POLOLU VNH3SP30 MD01B Motor Driver Carrier Board&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;Without Current Sense Output&lt;/p&gt;
+
+&lt;pre&gt;&lt;b&gt;
+DEVICE VERSIONS&lt;/b&gt;
+   [none]: plated auxilary OUTA connections
+*  -U   :  non-plated auxilary OUTA connections
+   -X   :  no symbol-pins for OUTx, BYPASS, VMOT, GND2 (drawing elements only)&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;SOURCE&lt;/b&gt;
+&lt;a href="www.pololu.com/" target="_blank"&gt;www.pololu.com/&lt;/a&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;SPECS&lt;/b&gt;
+Operatingg voltage VMOT           5.5 .. 16 V
+Logic Voltage      VIO            5 V typ.
+MOSFET on-resistance (per leg):   34 mOhm max.
+Max PWM frequency                 10 kHz
+Current sense                     n/a
+Over-voltage shutoff              36 V min. / 43 V typ.
+Logic input high threshold        3.25 V min.
+Time to overheat at 20 A           8 s
+Time to overheat at 15 A          30 s
+Current for infinite run time     9 A&lt;/pre&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;author&gt;Author: Dipl.-Ing. FH Rainer Bayer&lt;/author&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="POLOLU_VNH3SP30_U" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POLOLU_MD01B_U">
+<connects>
+<connect gate="G$1" pin="BYPASS" pad="BYP"/>
+<connect gate="G$1" pin="ENA/DIAGA" pad="ENA"/>
+<connect gate="G$1" pin="ENB/DIAGB" pad="ENB"/>
+<connect gate="G$1" pin="GND@1" pad="GND1"/>
+<connect gate="G$1" pin="GND@2" pad="GND2"/>
+<connect gate="G$1" pin="INA" pad="INA"/>
+<connect gate="G$1" pin="INB" pad="INB"/>
+<connect gate="G$1" pin="OUTA" pad="OUTA1"/>
+<connect gate="G$1" pin="OUTB" pad="OUTB"/>
+<connect gate="G$1" pin="PWM" pad="PWM"/>
+<connect gate="G$1" pin="VIO" pad="VIO"/>
+<connect gate="G$1" pin="VMOT" pad="VMOT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POLOLU_VNH2SP30-MD01B-X" prefix="MOD">
+<description>&lt;h3&gt;POLOLU VNH2SP30 MD01B Motor Driver Carrier Board&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;With Current Sense Output&lt;/p&gt;
+
+&lt;pre&gt;&lt;b&gt;
+DEVICE VERSIONS&lt;/b&gt;
+   [none]:  plated auxilary OUTA connections
+   -U   :  non-plated auxilary OUTA connections
+*  -X   :  no symbol-pins for OUTx, BYPASS, VMOT, GND2 (drawing elements only)&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;SOURCE
+&lt;/b&gt;&lt;a href="www.pololu.com/" target="_blank"&gt;www.pololu.com/&lt;/a&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;SPECS&lt;/b&gt;
+Operatingg voltage VMOT           5.5 .. 16 V
+Logic Voltage      VIO            5 V typ.
+MOSFET on-resistance (per leg):   19 mOhm max.
+Max PWM frequency                 20 kHz
+Current sense                     0.13 V/A
+Over-voltage shutoff              16 V min. / 19 V typ.
+Logic input high threshold        3.25 V min.
+Time to overheat at 20 A           35 s
+Time to overheat at 15 A          150 s
+Current for infinite run time     14 A&lt;/pre&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;author&gt;Author: Dipl.-Ing. FH Rainer Bayer&lt;/author&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="POLOLU_VNH2SP30_X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POLOLU_MD01B_X">
+<connects>
+<connect gate="G$1" pin="ENA/DIAGA" pad="ENA"/>
+<connect gate="G$1" pin="ENB/DIAGB" pad="ENB"/>
+<connect gate="G$1" pin="GND@1" pad="GND1"/>
+<connect gate="G$1" pin="INA" pad="INA"/>
+<connect gate="G$1" pin="INB" pad="INB"/>
+<connect gate="G$1" pin="PWM" pad="PWM"/>
+<connect gate="G$1" pin="SENSE" pad="SENSE"/>
+<connect gate="G$1" pin="VIO" pad="VIO"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POLOLU_VNH3SP30-MD01B-X" prefix="MOD">
+<description>&lt;h3&gt;POLOLU VNH3SP30 MD01B Motor Driver Carrier Board&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;Without Current Sense Output&lt;/p&gt;
+
+&lt;pre&gt;&lt;b&gt;
+DEVICE VERSIONS&lt;/b&gt;
+   [none]: plated auxilary OUTA connections
+   -U   :  non-plated auxilary OUTA connections
+*  -X   :  no symbol-pins for OUTx, BYPASS, VMOT, GND2 (drawing elements only)&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;SOURCE&lt;/b&gt;
+&lt;a href="www.pololu.com/" target="_blank"&gt;www.pololu.com/&lt;/a&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;b&gt;SPECS&lt;/b&gt;
+Operatingg voltage VMOT           5.5 .. 16 V
+Logic Voltage      VIO            5 V typ.
+MOSFET on-resistance (per leg):   34 mOhm max.
+Max PWM frequency                 10 kHz
+Current sense                     n/a
+Over-voltage shutoff              36 V min. / 43 V typ.
+Logic input high threshold        3.25 V min.
+Time to overheat at 20 A           8 s
+Time to overheat at 15 A          30 s
+Current for infinite run time     9 A&lt;/pre&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;author&gt;Author: Dipl.-Ing. FH Rainer Bayer&lt;/author&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="POLOLU_VNH3SP30_X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POLOLU_MD01B_X">
+<connects>
+<connect gate="G$1" pin="ENA/DIAGA" pad="ENA"/>
+<connect gate="G$1" pin="ENB/DIAGB" pad="ENB"/>
+<connect gate="G$1" pin="GND@1" pad="GND1"/>
+<connect gate="G$1" pin="INA" pad="INA"/>
+<connect gate="G$1" pin="INB" pad="INB"/>
+<connect gate="G$1" pin="PWM" pad="PWM"/>
+<connect gate="G$1" pin="VIO" pad="VIO"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

@@ -353,6 +353,7 @@ UsedLibrary="libraries/tango.lbr"
 UsedLibrary="libraries/lf33.lbr"
 UsedLibrary="libraries/diy-modules.lbr"
 UsedLibrary="libraries/Pololu Voltage Regulators.lbr"
+UsedLibrary="libraries/_hhn_Pololu.lbr"
 
 [Win_1]
 Type="Control Panel"
