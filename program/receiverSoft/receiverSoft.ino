@@ -2,8 +2,8 @@
 #include <ESP8266WiFi.h>
 
 //server data
-const char* ssid = "Kontroler_temp";
-const char* password = "kontroler_haslo";
+const char* ssid = "KontrolerTemp";
+const char* password = "kontroler";
 WiFiServer server(80);
 WiFiClient client;
 

@@ -2,21 +2,20 @@
 #include <DallasTemperature.h>
 #include <ESP8266WiFi.h>
 
-#define ONE_WIRE_BUS 4 //TSENSOR connected to GPIO4
-
-byte sensorPin = 13;
-
+//server data
 const char* ssid = "KontrolerTemp";
 const char* password = "kontroler";
 const char* host = "http://192.168.4.1";
+WiFiClient client;
 //IPAddress host(192,168,4,1);
 
+//temperature sensor data
+#define ONE_WIRE_BUS 4 //TSENSOR connected to GPIO4
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensor(&oneWire);
-WiFiClient client;
-
-float temperature = 0;
 const int TEMP_SENSOR = 13;
+float temperature = 0;
+
 
 void setup_wifi()
 {
