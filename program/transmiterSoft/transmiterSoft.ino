@@ -1,71 +1,57 @@
-#include <OneWire.h>
 #include <DallasTemperature.h>
+#include <OneWire.h>
 #include <ESP8266WiFi.h>
 
 //server data
 const char* ssid = "KontrolerTemp";
 const char* password = "kontroler";
-const char* host = "http://192.168.4.1";
-WiFiClient client;
-//IPAddress host(192,168,4,1);
+const IPAddress host(192,168,4,1);
+const uint8_t port = 801;
+
 
 //temperature sensor data
 #define ONE_WIRE_BUS 4 //TSENSOR connected to GPIO4
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensor(&oneWire);
-const int TEMP_SENSOR = 13;
-float temperature = 0;
+float temperature = 0.0;
 
 
-void setup_wifi()
+void setupWifi()
 {
   WiFi.mode(WIFI_STA); 
   WiFi.begin(ssid, password);
   while(WiFi.status() != WL_CONNECTED)
   {
-    WiFi.begin(ssid, password);
+    Serial.print("***");
     delay(500);
-  }
-}
-
-void setup_sensor()
-{
-  pinMode(TEMP_SENSOR, INPUT);
-  sensor.begin();
-}
-
-void reconnect()
-{
-  while(!client.connected())
-  {
-    client.connect(host, 80);
   }
 }
 
 void setup() 
 {
-  Serial.begin(115200);
-  delay(10);
-  //************
-  setup_wifi();
-  //************
-  setup_sensor();
+  Serial.begin(9600);
+  delay(100);
+  setupWifi();
+  Serial.println("Connected");
+  sensor.begin();
 }
 
 void loop() 
 {
-  if(!client.connected())
+  WiFiClient client;
+  if(!client.connect(host, 801))
   {
-    reconnect();
+    WiFi.begin(ssid, password);
+    Serial.println("connecting...");
   }
   else
   {
-    sensor.setResolution(12);
     sensor.requestTemperatures();
     temperature = sensor.getTempCByIndex(0);
-  //  client.publish("ha/_temp", String(temperature).c_str(), TRUE);
-    client.println(temperature);
+    temperature = temperature * 100;
+    int temp = int(temperature);
+    client.println(temp);
   } 
-  delay(30000);
+  delay(60000);
 
 }
