@@ -61,11 +61,11 @@ void setup()
 
 void printTemperatureMessageOnOLED()
 {
-  msg = head_of_msg + String(temp_value);  
+  msg = head_of_msg + String(temp_value) + String("\r\n");  
   //msg.toCharArray(msgOLED, msg.length() + 1);
   //display.clear();
   //display.print(msgOLED);
-  Serial.println(msg);
+  Serial.print(msg);
 }
 
 void printLimitTemperatureMessageOnOLED(int level)
