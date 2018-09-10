@@ -9,42 +9,46 @@ WiFiServer server(801);
 
 //pins
 static const uint8_t buzzer = 16;
-static const uint8_t choose_button = 12;
-static const uint8_t up_button = 13;
-static const uint8_t down_button = 14;
+static const uint8_t chooseButton = 12;
+static const uint8_t upButton = 14;
+static const uint8_t downButton = 13;
 static const uint8_t sda = 4;
 static const uint8_t scl = 5;
 
 //program
 OLED display(sda, scl);
-const int HIGH_LIMIT = 0;
-const int LOW_LIMIT = 1;
+const int HIGHLIMIT = 0;
+const int LOWLIMIT = 1;
 int limitLevel = 1;
-float limit_temp[] = {60.0, 30.0};
-float temp_value = 0.0;
-String head_of_msg = "Temperatura: ";
-String msg = "";
-char* msgOLED = "";
-String temperature = "";
+float limitTemp[] = {60.0, 30.0};
+float tempValue = 0.0;
+const char TEMPMSG[] = "Temp: ";
+const char UPLIMITMSG[] = "Gorna: ";
+const char DOWNLIMITMSG[] = "Dolna: ";
+const char UPMSG[] = "Gorna";
+const char DOWNMSG[] = "Dolna";
+const char CHOOICEMSG[] = "Wybrana: ";
+char* msgOLED;
 
 
 void setupPins()
 {
   pinMode(buzzer, OUTPUT);
-  pinMode(choose_button, INPUT);
-  pinMode(up_button, INPUT);
-  pinMode(down_button, INPUT);
+  pinMode(chooseButton, INPUT);
+  pinMode(upButton, INPUT);
+  pinMode(downButton, INPUT);
   digitalWrite(buzzer, HIGH);
-  attachInterrupt(digitalPinToInterrupt(choose_button), changeTempLimits, RISING);
-  attachInterrupt(digitalPinToInterrupt(up_button), increaseLimit, RISING);
-  attachInterrupt(digitalPinToInterrupt(down_button), decreaseLimit, RISING);
+  attachInterrupt(digitalPinToInterrupt(chooseButton), changeTempLimits, RISING);
+  attachInterrupt(digitalPinToInterrupt(upButton), increaseLimit, RISING);
+  attachInterrupt(digitalPinToInterrupt(downButton), decreaseLimit, RISING);
 }
 
 void setupOLED()
 {
    display.begin();
-   display.print("Witaj");
-   delay(1500);
+   delay(100);
+   display.print("Witaj", 2, 2);
+   delay(1400);
 }
 
 void setup()
@@ -53,48 +57,120 @@ void setup()
   WiFi.mode(WIFI_AP);
   WiFi.softAP(ssid, password);
   server.begin();
-  Serial.println("OLED test");
-  setupOLED();
-  //scan();
+  setupOLED();  
   setupPins();
+}
+
+void insertIntoArray(const char* text, float number)
+{
+  int sizeOfArray = strlen(text) + 1;
+  if(number >= 100.00)
+  {
+    sizeOfArray += 6;
+  }    
+  else if(number >= 10.00)
+  {
+    sizeOfArray += 5;
+  }
+  else
+  {
+    sizeOfArray += 4;
+  }
+  String tmpArray = String(number);
+  msgOLED = new char[sizeOfArray];
+  int j=0;
+  for(int i = 0; i < sizeOfArray; i++)
+  {
+    if(i < strlen(text))
+    {
+      msgOLED[i] = text[i];
+    }
+    else
+    {
+      msgOLED[i] = tmpArray[j];
+      j++;
+    }
+  }  
+}
+
+void insertIntoArray(const char* text, const char* text2)
+{
+  int sizeOfArray = strlen(text) + strlen(text2) + 1;
+  msgOLED = new char[sizeOfArray];
+  int j=0;
+  for(int i = 0; i < sizeOfArray; i++)
+  {
+    if(i < strlen(text))
+    {
+      msgOLED[i] = text[i];
+    }
+    else
+    {
+      msgOLED[i] = text2[j];
+      j++;
+    }
+  } 
 }
 
 void printTemperatureMessageOnOLED()
 {
-  msg = head_of_msg + String(temp_value) + String("\r\n");  
-  //msg.toCharArray(msgOLED, msg.length() + 1);
-  //display.clear();
-  //display.print(msgOLED);
-  Serial.print(msg);
+  insertIntoArray(TEMPMSG, tempValue);
+  display.clear();
+  delay(200);
+  display.print(msgOLED, 2, 2);
+  delay(200);
+  delete msgOLED;
 }
 
 void printLimitTemperatureMessageOnOLED(int level)
 {
+  display.clear();
+  delay(200);
   if (level == 0)
-    msg =  String("Gorna: ") + limit_temp[HIGH_LIMIT] + String("\r\n");
+  {
+    insertIntoArray(UPLIMITMSG, limitTemp[HIGHLIMIT]); 
+    display.print(msgOLED, 2, 2);
+    delay(200);
+    delete msgOLED;
+  }
   else if (level == 1)
-    msg = String("Dolna: ") + limit_temp[LOW_LIMIT] + String("\r\n");
+  {
+    insertIntoArray(DOWNLIMITMSG, limitTemp[LOWLIMIT]);
+    display.print(msgOLED, 2, 2);
+    delay(200);
+    delete msgOLED;
+  }    
   else if (level == 2)
   {
-    msg =  String("Gorna: ") + limit_temp[HIGH_LIMIT] + String("\r\nDolna: ") + limit_temp[LOW_LIMIT];
+    insertIntoArray(UPLIMITMSG, limitTemp[HIGHLIMIT]);   
+    display.print(msgOLED, 2, 2);
+    delay(200);
+    delete msgOLED;
+    insertIntoArray(DOWNLIMITMSG, limitTemp[LOWLIMIT]);  
+    display.print(msgOLED, 3, 2);
+    delay(200);
+    delete msgOLED;
     if(limitLevel == 0)
-      msg = msg + String("\r\nWybrana: Gorna\r\n");
+    {
+      insertIntoArray(CHOOICEMSG, UPMSG);
+      display.print(msgOLED, 4, 2);
+      delay(200);
+      delete msgOLED;
+    }      
     else 
-      msg = msg + String("\r\nWybrana: Dolna\r\n");
+    {
+      insertIntoArray(CHOOICEMSG, DOWNMSG);
+      display.print(msgOLED, 4, 2);
+      delay(200);
+      delete msgOLED;
+    }      
   }
-
-  //msg.toCharArray(msgOLED, msg.length() + 1);
-  //display.clear();
-  //display.print(msgOLED);
-  Serial.print(msg);
   delay(1500);
-  checkTemperature();
-  loop();
 }
 
 void checkTemperature()
 {
-  if ((temp_value <= limit_temp[LOW_LIMIT]) || (temp_value >= limit_temp[HIGH_LIMIT]))
+  if ((tempValue <= limitTemp[LOWLIMIT]) || (tempValue >= limitTemp[HIGHLIMIT]))
     digitalWrite(buzzer, LOW);
   else
     digitalWrite(buzzer, HIGH);
@@ -102,20 +178,24 @@ void checkTemperature()
 
 void increaseLimit()
 {
-  if(limit_temp[0] > limit_temp[1])
-    limit_temp[limitLevel] += 5.0;
-  if(limit_temp[0] <= limit_temp[1])
-    limit_temp[limitLevel] -= 5.0;
+  if(limitTemp[0] > limitTemp[1])
+    limitTemp[limitLevel] += 5.0;
+  if(limitTemp[0] <= limitTemp[1])
+    limitTemp[limitLevel] -= 5.0;
   printLimitTemperatureMessageOnOLED(limitLevel);
+  printTemperatureMessageOnOLED();
+  checkTemperature();
 }
 
 void decreaseLimit()
 {
-  if(limit_temp[0] > limit_temp[1])
-    limit_temp[limitLevel] -= 5.0;
-  if(limit_temp[0] <= limit_temp[1])
-    limit_temp[limitLevel] += 5.0;
+  if(limitTemp[0] > limitTemp[1])
+    limitTemp[limitLevel] -= 5.0;
+  if(limitTemp[0] <= limitTemp[1])
+    limitTemp[limitLevel] += 5.0;
   printLimitTemperatureMessageOnOLED(limitLevel);
+  printTemperatureMessageOnOLED();
+  checkTemperature();
 }
 
 void changeTempLimits()
@@ -125,84 +205,32 @@ void changeTempLimits()
   else
     limitLevel = 0;
   printLimitTemperatureMessageOnOLED(2);
-  delay(2000);
+  printTemperatureMessageOnOLED();
+}
+
+void clientIsConnected(WiFiClient client)
+{ 
+  String temperature = client.readStringUntil('\n'); 
+  temperature.remove(temperature.length()-1);  
+  Serial.println(temperature);     
+  int tmp = temperature.toInt();
+  tempValue = tmp/100.0; 
   printTemperatureMessageOnOLED();
   checkTemperature();
 }
 
-void scan()
-{
-  byte error, address;
-  int nDevices;
- 
-  Serial.println("Scanning...");
- 
-  nDevices = 0;
-  for(address = 1; address < 127; address++ )
-  {
-    // The i2c_scanner uses the return value of
-    // the Write.endTransmisstion to see if
-    // a device did acknowledge to the address.
-    Wire.beginTransmission(address);
-    error = Wire.endTransmission();
-    Serial.println(error);
-    if (error == 0)
-    {
-      Serial.print("I2C device found at address 0x");
-      if (address<16)
-        Serial.print("0");
-      Serial.print(address,HEX);
-      Serial.println("  !");
- 
-      nDevices++;
-    }
-    else if (error==4)
-    {
-      Serial.print("Unknown error at address 0x");
-      if (address<16)
-        Serial.print("0");
-      Serial.println(address,HEX);
-    }    
-  }
-  if (nDevices == 0)
-    Serial.println("No I2C devices found\n");
-  else
-    Serial.println("done\n");
- 
-  delay(5000);           // wait 5 seconds for next scan
-}
-
-void detachInterrupts()
-{
-  detachInterrupt(digitalPinToInterrupt(up_button));
-  detachInterrupt(digitalPinToInterrupt(choose_button));
-  detachInterrupt(digitalPinToInterrupt(down_button));
-}
-
-void attachInterrupts()
-{
-  attachInterrupt(digitalPinToInterrupt(choose_button), changeTempLimits, RISING);
-  attachInterrupt(digitalPinToInterrupt(up_button), increaseLimit, RISING);
-  attachInterrupt(digitalPinToInterrupt(down_button), decreaseLimit, RISING);
-}
 void loop()
 {
   
   WiFiClient client = server.available();
   if (client)
   {
-    detachInterrupts();
     if(client.connected())
     {
-        temperature = client.readStringUntil('\n');        
-        int tmp = temperature.toInt();
-        temp_value = tmp / 100.0;
-        printTemperatureMessageOnOLED();
-        checkTemperature();
+        clientIsConnected(client);
+        
     }
     client.stop();
-    attachInterrupts();
   }
-  temperature = "";
-  msg = "";
+  
 }
